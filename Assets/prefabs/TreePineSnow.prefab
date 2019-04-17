@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 7863403084540216984}
   - component: {fileID: 3257377449546729255}
   - component: {fileID: 6704832654302251833}
-  - component: {fileID: 8870843457740666577}
+  - component: {fileID: 9015524254803275610}
+  - component: {fileID: 2826423530102835730}
+  - component: {fileID: 6028883182041452242}
   m_Layer: 0
   m_Name: TreePineSnow
   m_TagString: Untagged
@@ -80,17 +82,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8870843457740666577
-MeshCollider:
+--- !u!114 &9015524254803275610
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5791865723009896191}
-  m_Material: {fileID: 13400000, guid: 63fe1c982c18f964e9f213bdcf9da445, type: 2}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: eab698993918d9d48bddea3b46c5f3ad, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351b081f18cf700439d5456fcb041528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material: StandardDefault
+  Mesh: TreePineSnow
+--- !u!114 &2826423530102835730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5791865723009896191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c419b78fa8eb2544ba9efd02a1244af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhysicsMaterial: Default
+  CollisionMesh: TreePineSnow
+--- !u!114 &6028883182041452242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5791865723009896191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f717c5678da7df44b79dcad58245304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
