@@ -1,16 +1,15 @@
 fileFormatVersion: 2
-guid: eab698993918d9d48bddea3b46c5f3ad
+guid: f10e9b5ea89ee3b4ea022b22abeb2569
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: snow
-    2100002: leaves
-    2100004: wood
+    2100000: dirt
+    2100002: snow
     2300000: //RootNode
     3300000: //RootNode
-    4300000: treePineSnow
+    4300000: blockSnowCornerSmall
   externalObjects: {}
   materials:
     importMaterials: 1
