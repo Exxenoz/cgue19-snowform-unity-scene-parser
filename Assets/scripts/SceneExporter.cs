@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Xml.Linq;
@@ -24,6 +24,20 @@ public class SceneExporter : MonoBehaviour
         return ToString(v);
     }
 
+    private string LocalRotationToString(Vector3 v)
+    {
+        v.y *= -1f;
+        return ToString(v);
+    }
+
+    private string LocalCameraRotationToString(Vector3 v)
+    {
+        v.x += 180f;
+        v.x *=  -1f;
+        v.z += 180f;
+        return ToString(v);
+    }
+
     private void ExportGameObject(Transform transform, XElement gameObjectElement)
     {
         gameObjectElement.Add(new XAttribute("name", transform.gameObject.name));
@@ -33,7 +47,8 @@ public class SceneExporter : MonoBehaviour
         {
             XElement e = new XElement("TransformComponent");
             e.Add(new XAttribute("localPosition", LocalPositionToString(transform.localPosition)));
-            e.Add(new XAttribute("localRotation", ToString(transform.localEulerAngles)));
+            e.Add(new XAttribute("localRotation", transform.GetComponent<SFCameraComponent>() ?
+                LocalCameraRotationToString(transform.localEulerAngles) : LocalRotationToString(transform.localEulerAngles)));
             e.Add(new XAttribute("localScale", ToString(transform.localScale)));
             componentsElement.Add(e);
         }
