@@ -201,7 +201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148080653
 GameObject:
@@ -231,6 +231,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7863403084540216984}
+  - {fileID: 2058742711}
+  - {fileID: 2140370832}
+  - {fileID: 1128269576}
   m_Father: {fileID: 421548682}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -301,7 +304,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &421548681
 GameObject:
@@ -330,11 +333,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4100358355650506295}
+  - {fileID: 1472560996}
   - {fileID: 148080654}
+  - {fileID: 4100358355650506295}
   - {fileID: 685993357}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -347,6 +351,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -411,13 +416,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1472560996}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: -180}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f712d6234240b94580843110037f50c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &685993356
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +464,7 @@ Transform:
   m_Children:
   - {fileID: 4971982048744600357}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913051495
 GameObject:
@@ -479,6 +496,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTransform: {fileID: 421548682}
+  Output: "<Scene>\r\n  <GameObject name=\"Main Camera Focus\">\r\n    <Components>\r\n
+    \     <TransformComponent localPosition=\"-2.71 12.87162 9.585811\" localRotation=\"0
+    0 0\" localScale=\"1 1 1\" />\r\n      <ArcBallControllerComponent />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"Main Camera\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 20\" localRotation=\"-180 180
+    180\" localScale=\"1 1 1\" />\r\n          <CameraComponent />\r\n        </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
+    (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
+    -2.33 4.88\" localRotation=\"90 -45 0\" localScale=\"0.2455001 0.2455 0.2455001\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
+    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject
+    name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
+    -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n          <RigidStaticComponent
+    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
+    \     <GameObject name=\"TreePineSnow (1)\">\r\n        <Components>\r\n          <TransformComponent
+    localPosition=\"-2.71 10 17.51\" localRotation=\"90 -315 0\" localScale=\"0.2455
+    0.2455 0.2455\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"TreePineSnow\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
+    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-8.91
+    9.82 17.56\" localRotation=\"0 -90 315\" localScale=\"0.2455 0.2455001 0.2455001\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
+    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n      <GameObject name=\"Rotator\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
+    -90 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n        <Children>\r\n
+    \         <GameObject name=\"TreePineSnow (3)\">\r\n            <Components>\r\n
+    \             <TransformComponent localPosition=\"-3 1 0\" localRotation=\"270
+    0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n              <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n              <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n              <RigidStaticComponent
+    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
+    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
+    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
+    10 8.23\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n
+    \       <Children>\r\n          <GameObject name=\"TreePineSnow (3)\">\r\n            <Components>\r\n
+    \             <TransformComponent localPosition=\"-3 1 0\" localRotation=\"270
+    0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n              <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n              <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n              <RigidStaticComponent
+    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
+    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
+    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
+    10 8.23\" localRotation=\"0 -270 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
+    (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
+    10 8.23\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n
+    \       <Children>\r\n          <GameObject name=\"TreePineSnow (3)\">\r\n            <Components>\r\n
+    \             <TransformComponent localPosition=\"-3 1 0\" localRotation=\"270
+    0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n              <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n              <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n              <RigidStaticComponent
+    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
+    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
+    (4)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
+    10 8.23\" localRotation=\"-8.537737E-07 -135 45\" localScale=\"1 1 1\" />\r\n
+    \       </Components>\r\n        <Children>\r\n          <GameObject name=\"TreePineSnow
+    (3)\">\r\n            <Components>\r\n              <TransformComponent localPosition=\"-3
+    1 0\" localRotation=\"270 0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n
+    \             <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
+    />\r\n              <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n              <RigidStaticComponent />\r\n            </Components>\r\n
+    \           <Children />\r\n          </GameObject>\r\n        </Children>\r\n
+    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Snowball\">\r\n
+    \   <Components>\r\n      <TransformComponent localPosition=\"-2.89 14.51 7.65\"
+    localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent
+    physicsMaterial=\"Default\" radius=\"0.5\" />\r\n      <RigidDynamicComponent
+    />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"SnowballMesh\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"0 0 0\"
+    localRotation=\"0 0 0\" localScale=\"0.003305583 0.003305583 0.003305583\" />\r\n
+    \         <MeshRendererComponent material=\"Snowball\" mesh=\"Snowball\" />\r\n
+    \       </Components>\r\n        <Children />\r\n      </GameObject>\r\n    </Children>\r\n
+    \ </GameObject>\r\n  <GameObject name=\"Blocks\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
 --- !u!4 &913051497
 Transform:
   m_ObjectHideFlags: 0
@@ -493,6 +599,140 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1128269575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 148080654}
+    m_Modifications:
+    - target: {fileID: 5791865723009896191, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_Name
+      value: TreePineSnow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.056692794
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99839175
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40330753
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40330753
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4033074
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
+--- !u!4 &1128269576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1128269575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1472560995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472560996}
+  - component: {fileID: 1472560997}
+  m_Layer: 0
+  m_Name: Main Camera Focus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472560996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472560995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.71, y: 12.87162, z: 9.585811}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 534669905}
+  m_Father: {fileID: 421548682}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472560997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472560995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3d6d9988cedec42b440f0905f2f88c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1638345323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -542,7 +782,7 @@ PrefabInstance:
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
@@ -561,6 +801,186 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ceee27fcddfb641994279b70c4db13, type: 3}
+--- !u!1001 &2058742710
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 148080654}
+    m_Modifications:
+    - target: {fileID: 5791865723009896191, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_Name
+      value: TreePineSnow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.63876784
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7693996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 79.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.18167002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.18167002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.18167
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
+--- !u!4 &2058742711 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2058742710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2140370831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 148080654}
+    m_Modifications:
+    - target: {fileID: 5791865723009896191, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_Name
+      value: TreePineSnow (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99488074
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.10105626
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 191.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.18167005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.18167005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.18167
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
+--- !u!4 &2140370832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2140370831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1997069002662992164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -591,22 +1011,22 @@ PrefabInstance:
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
@@ -621,7 +1041,7 @@ PrefabInstance:
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
         type: 3}
