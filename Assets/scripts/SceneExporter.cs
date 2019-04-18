@@ -89,6 +89,24 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFArcBallControllerComponent c = transform.GetComponent<SFArcBallControllerComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("ArcBallControllerComponent");
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFCameraComponent c = transform.GetComponent<SFCameraComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("CameraComponent");
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");
