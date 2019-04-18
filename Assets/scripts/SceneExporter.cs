@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Xml.Linq;
@@ -113,6 +113,11 @@ public class SceneExporter : MonoBehaviour
 
         for (int i = 0; i < transform.childCount; i++)
         {
+            if (!transform.GetChild(i).gameObject.activeInHierarchy)
+            {
+                continue;
+            }
+
             XElement childGameObjectElement = new XElement("GameObject");
             ExportGameObject(transform.GetChild(i), childGameObjectElement);
             childrenElement.Add(childGameObjectElement);
@@ -127,6 +132,11 @@ public class SceneExporter : MonoBehaviour
 
         for (int i = 0; i < SceneTransform.childCount; i++)
         {
+            if (!SceneTransform.GetChild(i).gameObject.activeInHierarchy)
+            {
+                continue;
+            }
+
             XElement e = new XElement("GameObject");
             ExportGameObject(SceneTransform.GetChild(i), e);
             sceneElement.Add(e);
