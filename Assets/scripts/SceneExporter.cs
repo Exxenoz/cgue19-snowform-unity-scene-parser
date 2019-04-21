@@ -91,6 +91,8 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("RigidDynamicComponent");
+                e.Add(new XAttribute("CCD", c.CCD));
+                e.Add(new XAttribute("mass", c.Mass.ToString(new CultureInfo("en-US"))));
                 componentsElement.Add(e);
             }
         }
@@ -118,6 +120,15 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("CameraComponent");
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFThirdPersonControllerComponent c = transform.GetComponent<SFThirdPersonControllerComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("ThirdPersonControllerComponent");
                 componentsElement.Add(e);
             }
         }
