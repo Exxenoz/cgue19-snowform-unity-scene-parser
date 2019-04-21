@@ -335,6 +335,7 @@ Transform:
   m_Children:
   - {fileID: 148080654}
   - {fileID: 4100358355650506295}
+  - {fileID: 1852967098}
   - {fileID: 685993357}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -463,7 +464,7 @@ Transform:
   m_Children:
   - {fileID: 4971982048744600357}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913051495
 GameObject:
@@ -495,14 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTransform: {fileID: 421548682}
-  Output: "<Scene>\r\n  <GameObject name=\"Main Camera Focus\">\r\n    <Components>\r\n
-    \     <TransformComponent localPosition=\"-2.71 12.87162 9.585811\" localRotation=\"0
-    0 0\" localScale=\"1 1 1\" />\r\n      <ArcBallControllerComponent />\r\n    </Components>\r\n
-    \   <Children>\r\n      <GameObject name=\"Main Camera\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 20\" localRotation=\"-180 180
-    180\" localScale=\"1 1 1\" />\r\n          <CameraComponent />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
-    \ <GameObject name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent
+  Output: "<Scene>\r\n  <GameObject name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent
     localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
     \   <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
@@ -529,21 +523,41 @@ MonoBehaviour:
     />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
     />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject
     name=\"Snowball\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"-2.89
-    14.51 7.65\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent
-    physicsMaterial=\"Default\" radius=\"0.5\" />\r\n      <RigidDynamicComponent
-    />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"SnowballMesh\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"0 0 0\"
-    localRotation=\"0 0 0\" localScale=\"0.003305583 0.003305583 0.003305583\" />\r\n
-    \         <MeshRendererComponent material=\"Snowball\" mesh=\"Snowball\" />\r\n
-    \       </Components>\r\n        <Children />\r\n      </GameObject>\r\n    </Children>\r\n
-    \ </GameObject>\r\n  <GameObject name=\"Blocks\">\r\n    <Components>\r\n      <TransformComponent
+    20.2 4.53\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent
+    physicsMaterial=\"Default\" radius=\"0.5\" trigger=\"false\" />\r\n      <RigidDynamicComponent
+    CCD=\"true\" kinematic=\"false\" mass=\"1\" />\r\n    </Components>\r\n    <Children>\r\n
+    \     <GameObject name=\"SnowballMesh\">\r\n        <Components>\r\n          <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"0.003305583 0.003305583
+    0.003305583\" />\r\n          <MeshRendererComponent material=\"Snowball\" mesh=\"Snowball\"
+    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
+    \     <GameObject name=\"Main Camera Focus\">\r\n        <Components>\r\n          <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <ThirdPersonControllerComponent
+    />\r\n        </Components>\r\n        <Children>\r\n          <GameObject name=\"Main
+    Camera\">\r\n            <Components>\r\n              <TransformComponent localPosition=\"0
+    0 20\" localRotation=\"-180 180 180\" localScale=\"1 1 1\" />\r\n              <CameraComponent
+    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
+    \       </Children>\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
+    \ <GameObject name=\"Moving Blocks\">\r\n    <Components>\r\n      <TransformComponent
     localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
-    \   <Children>\r\n      <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\"
-    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
-    collisionMesh=\"BlockSnow\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
+    \   <Children>\r\n      <GameObject name=\"BlockMovingGroup\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 3.64 -15.68\" localRotation=\"0
+    0 0\" localScale=\"1 1 1\" />\r\n          <MovingPlatformComponent moveDirection=\"0
+    1 0\" length=\"10\" time=\"5\" />\r\n        </Components>\r\n        <Children>\r\n
+    \         <GameObject name=\"BlockMoving\">\r\n            <Components>\r\n              <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n              <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockMoving\" />\r\n              <BoxColliderComponent
+    physicsMaterial=\"Default\" halfExtent=\"5 1.25 5\" trigger=\"false\" />\r\n              <RigidDynamicComponent
+    CCD=\"false\" kinematic=\"true\" mass=\"999999\" />\r\n            </Components>\r\n
+    \           <Children />\r\n          </GameObject>\r\n        </Children>\r\n
+    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Blocks\">\r\n
+    \   <Components>\r\n      <TransformComponent localPosition=\"0 0 0\" localRotation=\"0
+    0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject
+    name=\"BlockSnow\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" />\r\n          <RigidStaticComponent
+    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
+    \   </Children>\r\n  </GameObject>\r\n</Scene>"
 --- !u!4 &913051497
 Transform:
   m_ObjectHideFlags: 0
@@ -765,6 +779,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ceee27fcddfb641994279b70c4db13, type: 3}
+--- !u!1 &1852967097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852967098}
+  m_Layer: 0
+  m_Name: Moving Blocks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1852967098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852967097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3059554267892444364}
+  m_Father: {fileID: 421548682}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2058742710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,6 +1128,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
+--- !u!4 &3059554267892444364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+    type: 3}
+  m_PrefabInstance: {fileID: 8526427668816927299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4100358355650506295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
@@ -1095,9 +1146,99 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2731562594414795657}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7241486988697995312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7241486988697995312, guid: a9393f49f42a3e0428f859c63ffbd361,
+    type: 3}
+  m_PrefabInstance: {fileID: 8526427668816927299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7241486988697995313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241486988697995312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9c6d628b80ea546b0eb5f1807da5e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveDirection: {x: 0, y: 1, z: 0}
+  Length: 10
+  Time: 5
 --- !u!4 &7863403084540216984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7863403084540216984, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
     type: 3}
   m_PrefabInstance: {fileID: 1997069002662992164}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8526427668816927299
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1852967098}
+    m_Modifications:
+    - target: {fileID: 7241486988697995312, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_Name
+      value: BlockMovingGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059554267892444364, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9393f49f42a3e0428f859c63ffbd361, type: 3}

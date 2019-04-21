@@ -13,6 +13,16 @@ public class SceneExporter : MonoBehaviour
     [TextArea(8, 8)]
     public string Output;
 
+    private string ToString(bool b)
+    {
+        return b ? "true" : "false";
+    }
+
+    private string ToString(float f)
+    {
+        return f.ToString(new CultureInfo("en-US"));
+    }
+
     private string ToString(Vector3 v)
     {
         return v.x.ToString(new CultureInfo("en-US")) + " " + v.y.ToString(new CultureInfo("en-US")) + " " + v.z.ToString(new CultureInfo("en-US"));
@@ -71,6 +81,7 @@ public class SceneExporter : MonoBehaviour
                 XElement e = new XElement("MeshColliderComponent");
                 e.Add(new XAttribute("physicsMaterial", c.PhysicsMaterial));
                 e.Add(new XAttribute("collisionMesh", c.CollisionMesh));
+                e.Add(new XAttribute("offset", LocalPositionToString(c.Offset)));
                 componentsElement.Add(e);
             }
         }
@@ -81,7 +92,22 @@ public class SceneExporter : MonoBehaviour
             {
                 XElement e = new XElement("SphereColliderComponent");
                 e.Add(new XAttribute("physicsMaterial", c.PhysicsMaterial));
-                e.Add(new XAttribute("radius", c.Radius.ToString(new CultureInfo("en-US"))));
+                e.Add(new XAttribute("offset", LocalPositionToString(c.Offset)));
+                e.Add(new XAttribute("radius", ToString(c.Radius)));
+                e.Add(new XAttribute("trigger", ToString(c.Trigger)));
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFBoxColliderComponent c = transform.GetComponent<SFBoxColliderComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("BoxColliderComponent");
+                e.Add(new XAttribute("physicsMaterial", c.PhysicsMaterial));
+                e.Add(new XAttribute("offset", LocalPositionToString(c.Offset)));
+                e.Add(new XAttribute("halfExtent", ToString(c.HalfExtent)));
+                e.Add(new XAttribute("trigger", ToString(c.Trigger)));
                 componentsElement.Add(e);
             }
         }
@@ -91,8 +117,9 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("RigidDynamicComponent");
-                e.Add(new XAttribute("CCD", c.CCD));
-                e.Add(new XAttribute("mass", c.Mass.ToString(new CultureInfo("en-US"))));
+                e.Add(new XAttribute("CCD", ToString(c.CCD)));
+                e.Add(new XAttribute("kinematic", ToString(c.Kinematic)));
+                e.Add(new XAttribute("mass", ToString(c.Mass)));
                 componentsElement.Add(e);
             }
         }
@@ -129,6 +156,18 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("ThirdPersonControllerComponent");
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFMovingPlatformComponent c = transform.GetComponent<SFMovingPlatformComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("MovingPlatformComponent");
+                e.Add(new XAttribute("moveDirection", ToString(c.MoveDirection)));
+                e.Add(new XAttribute("length", ToString(c.Length)));
+                e.Add(new XAttribute("time", ToString(c.Time)));
                 componentsElement.Add(e);
             }
         }

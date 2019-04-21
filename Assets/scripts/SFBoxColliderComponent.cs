@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SFSphereColliderComponent : MonoBehaviour
+public class SFBoxColliderComponent : MonoBehaviour
 {
     public string PhysicsMaterial;
     public Vector3 Offset = new Vector3(0f, 0f, 0f);
-    public float Radius;
+    public Vector3 HalfExtent = new Vector3(1f, 1f, 1f);
     public bool Trigger;
 }
