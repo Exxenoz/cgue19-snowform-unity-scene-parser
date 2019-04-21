@@ -235,7 +235,7 @@ Transform:
   - {fileID: 2140370832}
   - {fileID: 1128269576}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
@@ -333,7 +333,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1472560996}
   - {fileID: 148080654}
   - {fileID: 4100358355650506295}
   - {fileID: 685993357}
@@ -464,7 +463,7 @@ Transform:
   m_Children:
   - {fileID: 4971982048744600357}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913051495
 GameObject:
@@ -502,15 +501,9 @@ MonoBehaviour:
     \   <Children>\r\n      <GameObject name=\"Main Camera\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"0 0 20\" localRotation=\"-180 180
     180\" localScale=\"1 1 1\" />\r\n          <CameraComponent />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
-    (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    -2.33 4.88\" localRotation=\"90 -45 0\" localScale=\"0.2455001 0.2455 0.2455001\"
-    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
-    />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
-    />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject
-    name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
-    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
+    \ <GameObject name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
     \   <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
     -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
@@ -518,59 +511,25 @@ MonoBehaviour:
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n          <RigidStaticComponent
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"TreePineSnow (1)\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"-2.71 10 17.51\" localRotation=\"90 -315 0\" localScale=\"0.2455
-    0.2455 0.2455\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    localPosition=\"-4.03 10.015 7.78\" localRotation=\"0 -79.4 0\" localScale=\"0.18167
+    0.18167 0.18167\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"TreePineSnow\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
-    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-8.91
-    9.82 17.56\" localRotation=\"0 -90 315\" localScale=\"0.2455 0.2455001 0.2455001\"
+    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-3.75
+    10.015 9.1\" localRotation=\"0 -191.6 0\" localScale=\"0.1816701 0.18167 0.1816701\"
     />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
     />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
     />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
-    />\r\n      </GameObject>\r\n      <GameObject name=\"Rotator\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
-    -90 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n        <Children>\r\n
-    \         <GameObject name=\"TreePineSnow (3)\">\r\n            <Components>\r\n
-    \             <TransformComponent localPosition=\"-3 1 0\" localRotation=\"270
-    0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n              <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n              <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n              <RigidStaticComponent
-    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
-    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
-    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
-    10 8.23\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n
-    \       <Children>\r\n          <GameObject name=\"TreePineSnow (3)\">\r\n            <Components>\r\n
-    \             <TransformComponent localPosition=\"-3 1 0\" localRotation=\"270
-    0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n              <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n              <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n              <RigidStaticComponent
-    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
-    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
-    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
-    10 8.23\" localRotation=\"0 -270 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
-    (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
-    10 8.23\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n        </Components>\r\n
-    \       <Children>\r\n          <GameObject name=\"TreePineSnow (3)\">\r\n            <Components>\r\n
-    \             <TransformComponent localPosition=\"-3 1 0\" localRotation=\"270
-    0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n              <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n              <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" />\r\n              <RigidStaticComponent
-    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
-    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"Rotator
-    (4)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-2.71
-    10 8.23\" localRotation=\"-8.537737E-07 -135 45\" localScale=\"1 1 1\" />\r\n
-    \       </Components>\r\n        <Children>\r\n          <GameObject name=\"TreePineSnow
-    (3)\">\r\n            <Components>\r\n              <TransformComponent localPosition=\"-3
-    1 0\" localRotation=\"270 0 0\" localScale=\"0.2455001 0.2455001 0.2455001\" />\r\n
-    \             <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
-    />\r\n              <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
-    />\r\n              <RigidStaticComponent />\r\n            </Components>\r\n
-    \           <Children />\r\n          </GameObject>\r\n        </Children>\r\n
-    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Snowball\">\r\n
-    \   <Components>\r\n      <TransformComponent localPosition=\"-2.89 14.51 7.65\"
-    localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent
+    />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow (3)\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"-7.68 9.97
+    3.52\" localRotation=\"0 -6.5 0\" localScale=\"0.4033075 0.4033074 0.4033075\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
+    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject
+    name=\"Snowball\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"-2.89
+    14.51 7.65\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent
     physicsMaterial=\"Default\" radius=\"0.5\" />\r\n      <RigidDynamicComponent
     />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"SnowballMesh\">\r\n
     \       <Components>\r\n          <TransformComponent localPosition=\"0 0 0\"
@@ -713,13 +672,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472560995}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.71, y: 12.87162, z: 9.585811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534669905}
-  m_Father: {fileID: 421548682}
-  m_RootOrder: 0
+  m_Father: {fileID: 4100358355650506295}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1472560997
 MonoBehaviour:
@@ -730,7 +689,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1472560995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df3d6d9988cedec42b440f0905f2f88c, type: 3}
+  m_Script: {fileID: 11500000, guid: f4a4dd23347185345b008a0ff6e2fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1638345323
@@ -752,12 +711,12 @@ PrefabInstance:
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.51
+      value: 20.2
       objectReference: {fileID: 0}
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.65
+      value: 4.53
       objectReference: {fileID: 0}
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
@@ -782,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
@@ -798,6 +757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784529062677087715, guid: e2ceee27fcddfb641994279b70c4db13,
+        type: 3}
+      propertyPath: CCD
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ceee27fcddfb641994279b70c4db13, type: 3}
