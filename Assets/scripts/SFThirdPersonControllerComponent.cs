@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class SFThirdPersonControllerComponent : MonoBehaviour
 {
+    public string targetId = "";
 }

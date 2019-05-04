@@ -50,6 +50,10 @@ public class SceneExporter : MonoBehaviour
 
     private void ExportGameObject(Transform transform, XElement gameObjectElement)
     {
+        if (!string.IsNullOrEmpty(transform.gameObject.tag) && transform.gameObject.tag != "Untagged")
+        {
+            gameObjectElement.Add(new XAttribute("id", transform.gameObject.tag));
+        }
         gameObjectElement.Add(new XAttribute("name", transform.gameObject.name));
 
         XElement componentsElement = new XElement("Components");
@@ -156,6 +160,7 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("ThirdPersonControllerComponent");
+                e.Add(new XAttribute("targetId", c.targetId));
                 componentsElement.Add(e);
             }
         }
