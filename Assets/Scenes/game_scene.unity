@@ -787,13 +787,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalRotation: {x: 0, y: -0.9848078, z: 0.17364807, w: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1472560996}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: -200, y: 0, z: -180}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
     0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <ThirdPersonControllerComponent
     targetId=\"Snowball\" />\r\n        </Components>\r\n        <Children>\r\n          <GameObject
     id=\"MainCamera\" name=\"Main Camera\">\r\n            <Components>\r\n              <TransformComponent
-    localPosition=\"0 0 20\" localRotation=\"-180 180 180\" localScale=\"1 1 1\" />\r\n
+    localPosition=\"0 3 20\" localRotation=\"-530 180 180\" localScale=\"1 1 1\" />\r\n
     \             <CameraComponent />\r\n            </Components>\r\n            <Children
     />\r\n          </GameObject>\r\n        </Children>\r\n      </GameObject>\r\n
     \     <GameObject name=\"SnowballMesh\">\r\n        <Components>\r\n          <TransformComponent
@@ -1659,7 +1659,7 @@ MonoBehaviour:
     localRotation=\"0 0 0\" localScale=\"0.5 0.5 0.5\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"Coin\" />\r\n          <BoxColliderComponent
     physicsMaterial=\"Default\" offset=\"0 0 0\" halfExtent=\"2.5 2.5 2.5\" trigger=\"true\"
-    />\r\n          <RigidStaticComponent />\r\n          <RotateComponent rotationDirection=\"1
+    />\r\n          <RigidStaticComponent />\r\n          <RotateComponent rotationDirection=\"0
     1 0\" speed=\"5\" />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"Snowman\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"-12.28 10 67.72\" localRotation=\"0 -135 0\" localScale=\"0.5000002
