@@ -177,6 +177,17 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFRotateComponent c = transform.GetComponent<SFRotateComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("RotateComponent");
+                e.Add(new XAttribute("rotationDirection", ToString(c.rotationDirection)));
+                e.Add(new XAttribute("speed", ToString(c.speed)));
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");
