@@ -188,6 +188,15 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFCoinComponent c = transform.GetComponent<SFCoinComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("CoinComponent");
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");
