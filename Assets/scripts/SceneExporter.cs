@@ -197,6 +197,15 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFFlagComponent c = transform.GetComponent<SFFlagComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("FlagComponent");
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");
