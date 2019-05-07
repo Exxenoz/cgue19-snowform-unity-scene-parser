@@ -1482,14 +1482,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTransform: {fileID: 421548682}
-  Output: "<Scene>\r\n  <GameObject name=\"Options\">\r\n    <Components>\r\n      <TransformComponent
-    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <GameSceneOptionComponent
-    key=\"RemainingTime\" value=\"02:00\" />\r\n    </Components>\r\n    <Children
-    />\r\n  </GameObject>\r\n  <GameObject name=\"Trees\">\r\n    <Components>\r\n
+  Output: "<Scene>\r\n  <GameObject name=\"Scene Options\">\r\n    <Components>\r\n
     \     <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1
-    1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"-2.71 10
-    8.23\" localRotation=\"0 -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
+    1 1\" />\r\n      <SceneOptionComponent key=\"RemainingTime\" value=\"02:00\"
+    />\r\n    </Components>\r\n    <Children />\r\n  </GameObject>\r\n  <GameObject
+    name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
+    -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent />\r\n        </Components>\r\n        <Children
@@ -3433,6 +3434,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72105cf6d3e53834996e531f25d97fea, type: 3}
+--- !u!1 &1872804874670084796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5334193039702875867, guid: 72105cf6d3e53834996e531f25d97fea,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872804874670084795}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1872804874670084797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872804874670084796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d687b818d4c0cf47b2388305f1ac7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhysicsMaterial: Default
+  Offset: {x: 0, y: 0, z: 0}
+  HalfExtent: {x: 2.5, y: 2.5, z: 2.5}
+  Trigger: 1
 --- !u!1001 &1997069002662992164
 PrefabInstance:
   m_ObjectHideFlags: 0
