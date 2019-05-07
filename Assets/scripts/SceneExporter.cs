@@ -207,8 +207,9 @@ public class SceneExporter : MonoBehaviour
         }
 
         {
-            SFSceneOptionComponent c = transform.GetComponent<SFSceneOptionComponent>();
-            if (c != null)
+            SFSceneOptionComponent[] cs = transform.GetComponents<SFSceneOptionComponent>();
+
+            foreach (SFSceneOptionComponent c in cs)
             {
                 XElement e = new XElement("SceneOptionComponent");
                 e.Add(new XAttribute("key", c.Key));

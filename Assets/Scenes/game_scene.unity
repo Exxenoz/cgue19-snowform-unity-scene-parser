@@ -817,6 +817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588970566}
   - component: {fileID: 588970567}
+  - component: {fileID: 588970568}
   m_Layer: 0
   m_Name: Scene Options
   m_TagString: Untagged
@@ -852,6 +853,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: RemainingTime
   Value: 02:00
+--- !u!114 &588970568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588970565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6b5a6041c93bf429c07cedbd5332f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: TransitionTime
+  Value: 2
 --- !u!1001 &631588225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1611,59 +1626,61 @@ MonoBehaviour:
     2.5 7.55\" localRotation=\"0 -90.12739 0\" localScale=\"0.5000001 0.5 0.5000001\"
     />\r\n              <MeshRendererComponent material=\"StandardDefault\" mesh=\"Flag\"
     />\r\n              <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Flag\"
-    offset=\"0 0 0\" />\r\n              <RigidStaticComponent />\r\n              <FlagComponent
-    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
-    \       </Children>\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
-    \ <GameObject name=\"Blocks\">\r\n    <Components>\r\n      <TransformComponent
-    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
-    \   <Children>\r\n      <GameObject name=\"BlockSnowSlope\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 10\" localRotation=\"0 0 0\"
-    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"BlockSnowSlope\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
-    collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
-    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \     <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
-    \         <RigidStaticComponent />\r\n        </Components>\r\n        <Children
-    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow (1)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 -10 20\" localRotation=\"0 0 0\"
+    offset=\"0 0 0\" />\r\n              <BoxColliderComponent physicsMaterial=\"Default\"
+    offset=\"0 0 0\" halfExtent=\"2.5 2.5 2.5\" trigger=\"true\" />\r\n              <RigidStaticComponent
+    />\r\n              <FlagComponent />\r\n            </Components>\r\n            <Children
+    />\r\n          </GameObject>\r\n        </Children>\r\n      </GameObject>\r\n
+    \   </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Blocks\">\r\n    <Components>\r\n
+    \     <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1
+    1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"BlockSnowSlope\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"0 0 10\"
+    localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockSnowSlope\" />\r\n          <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\"
+    />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \     <GameObject name=\"BlockSnow (2)\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"0 -10 30\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n
+    \     <GameObject name=\"BlockSnow (1)\">\r\n        <Components>\r\n          <TransformComponent
+    localPosition=\"0 -10 20\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n
     \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"BlockSnow\"
     />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
-    (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    -10 40\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
+    -10 30\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent />\r\n        </Components>\r\n        <Children
-    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowSlope (1)\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"-10 0 60\"
-    localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowSlope\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\"
-    />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
-    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow (4)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 60\" localRotation=\"0 0 0\"
+    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow (3)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 -10 40\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \     <GameObject name=\"BlockSnowCornerLarge\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"-10 0 70\" localRotation=\"0 -90 0\" localScale=\"1 1 1\" />\r\n
-    \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\"
+    \     <GameObject name=\"BlockSnowSlope (1)\">\r\n        <Components>\r\n          <TransformComponent
+    localPosition=\"-10 0 60\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n
+    \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"BlockSnowSlope\"
+    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"BlockSnowSlope\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge
-    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    0 70\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
+    (4)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
+    0 60\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
+    \         <RigidStaticComponent />\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"-10 0 70\"
+    localRotation=\"0 -90 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\" />\r\n          <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\" offset=\"0
+    0 0\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge (1)\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"0 0 70\"
+    localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\" />\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\" offset=\"0
     0 0\" />\r\n          <RigidStaticComponent />\r\n        </Components>\r\n        <Children
