@@ -206,6 +206,17 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFSceneOptionComponent c = transform.GetComponent<SFSceneOptionComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("SceneOptionComponent");
+                e.Add(new XAttribute("key", c.Key));
+                e.Add(new XAttribute("value", c.Value));
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");
