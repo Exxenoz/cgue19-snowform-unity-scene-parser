@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class SFRigidStaticComponent : MonoBehaviour
 {
+    public uint RaycastLayerMask = 1;
 }

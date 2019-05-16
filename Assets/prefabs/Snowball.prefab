@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10a692ea2a42014386255c0df56a2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PhysicsMaterial: Default
+  PhysicsMaterial: Snowball
+  Offset: {x: 0, y: 0, z: 0}
   Radius: 0.5
+  Trigger: 0
 --- !u!114 &4784529062677087715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +61,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc8c67f25c6d7345a35096eecf97ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CCD: 1
+  Kinematic: 0
+  Mass: 1
+  MaxLinearVelocity: 80
+  MaxAngularVelocity: 100
+  RaycastLayerMask: 2
 --- !u!1 &851766966263627619
 GameObject:
   m_ObjectHideFlags: 0

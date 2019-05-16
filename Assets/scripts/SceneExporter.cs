@@ -124,6 +124,9 @@ public class SceneExporter : MonoBehaviour
                 e.Add(new XAttribute("CCD", ToString(c.CCD)));
                 e.Add(new XAttribute("kinematic", ToString(c.Kinematic)));
                 e.Add(new XAttribute("mass", ToString(c.Mass)));
+                e.Add(new XAttribute("maxLinearVelocity", ToString(c.MaxLinearVelocity)));
+                e.Add(new XAttribute("maxAngularVelocity", ToString(c.MaxAngularVelocity)));
+                e.Add(new XAttribute("raycastLayerMask", ToString(c.RaycastLayerMask)));
                 componentsElement.Add(e);
             }
         }
@@ -133,6 +136,7 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("RigidStaticComponent");
+                e.Add(new XAttribute("raycastLayerMask", ToString(c.RaycastLayerMask)));
                 componentsElement.Add(e);
             }
         }
@@ -161,6 +165,7 @@ public class SceneExporter : MonoBehaviour
             {
                 XElement e = new XElement("ThirdPersonControllerComponent");
                 e.Add(new XAttribute("targetId", c.targetId));
+                e.Add(new XAttribute("distance", ToString(c.distance)));
                 componentsElement.Add(e);
             }
         }
