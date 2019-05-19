@@ -74,6 +74,45 @@ public class SceneExporter : MonoBehaviour
                 XElement e = new XElement("MeshRendererComponent");
                 e.Add(new XAttribute("material", c.Material));
                 e.Add(new XAttribute("mesh", c.Mesh));
+                foreach (SFDirectionalLightComponent l in c.directionalLights)
+                {
+                    if (!string.IsNullOrEmpty(l.gameObject.tag) && l.gameObject.tag != "Untagged")
+                    {
+                        XElement e2 = new XElement("Light");
+                        e2.Add(new XAttribute("gameObjectId", l.tag));
+                        e.Add(e2);
+                    }
+                    else
+                    {
+                        Debug.LogError("Could not add directional light of game object '" + l.name + "' to mesh renderer of game object '" + c.name + "', because the light game object has no tag set!");
+                    }
+                }
+                foreach (SFPointLightComponent l in c.pointLights)
+                {
+                    if (!string.IsNullOrEmpty(l.gameObject.tag) && l.gameObject.tag != "Untagged")
+                    {
+                        XElement e2 = new XElement("Light");
+                        e2.Add(new XAttribute("gameObjectId", l.tag));
+                        e.Add(e2);
+                    }
+                    else
+                    {
+                        Debug.LogError("Could not add point light of game object '" + l.name + "' to mesh renderer of game object '" + c.name + "', because the light game object has no tag set!");
+                    }
+                }
+                foreach (SFSpotLightComponent l in c.spotLights)
+                {
+                    if (!string.IsNullOrEmpty(l.gameObject.tag) && l.gameObject.tag != "Untagged")
+                    {
+                        XElement e2 = new XElement("Light");
+                        e2.Add(new XAttribute("gameObjectId", l.tag));
+                        e.Add(e2);
+                    }
+                    else
+                    {
+                        Debug.LogError("Could not add spot light of game object '" + l.name + "' to mesh renderer of game object '" + c.name + "', because the light game object has no tag set!");
+                    }
+                }
                 componentsElement.Add(e);
             }
         }
@@ -228,6 +267,49 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("PlayerComponent");
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFDirectionalLightComponent c = transform.GetComponent<SFDirectionalLightComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("DirectionalLightComponent");
+                e.Add(new XAttribute("direction", ToString(c.Direction)));
+                e.Add(new XAttribute("color", ToString(new Vector3(c.Color.r, c.Color.g, c.Color.b))));
+                e.Add(new XAttribute("intensity", ToString(c.Intensity)));
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFPointLightComponent c = transform.GetComponent<SFPointLightComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("PointLightComponent");
+                e.Add(new XAttribute("color", ToString(new Vector3(c.Color.r, c.Color.g, c.Color.b))));
+                e.Add(new XAttribute("intensity", ToString(c.Intensity)));
+                e.Add(new XAttribute("constant", ToString(c.Constant)));
+                e.Add(new XAttribute("linear", ToString(c.Linear)));
+                e.Add(new XAttribute("quadratic", ToString(c.Quadratic)));
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFSpotLightComponent c = transform.GetComponent<SFSpotLightComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("SpotLightComponent");
+                e.Add(new XAttribute("direction", ToString(c.Direction)));
+                e.Add(new XAttribute("color", ToString(new Vector3(c.Color.r, c.Color.g, c.Color.b))));
+                e.Add(new XAttribute("intensity", ToString(c.Intensity)));
+                e.Add(new XAttribute("innerCutoff", ToString(c.InnerCutoff)));
+                e.Add(new XAttribute("outerCutoff", ToString(c.OuterCutoff)));
+                e.Add(new XAttribute("constant", ToString(c.Constant)));
+                e.Add(new XAttribute("linear", ToString(c.Linear)));
+                e.Add(new XAttribute("quadratic", ToString(c.Quadratic)));
                 componentsElement.Add(e);
             }
         }

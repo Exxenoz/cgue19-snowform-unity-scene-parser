@@ -209,7 +209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148080653
 GameObject:
@@ -252,7 +252,7 @@ Transform:
   - {fileID: 1217287160}
   - {fileID: 696001735}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &163069983
 PrefabInstance:
@@ -321,6 +321,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbefeb5142414d144b98d620680d1f5e, type: 3}
 --- !u!4 &163069984 stripped
@@ -411,6 +421,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.19999999
       objectReference: {fileID: 0}
+    - target: {fileID: 8313933065152655177, guid: a61c720f6776a3d419883bae91cfb180,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313933065152655177, guid: a61c720f6776a3d419883bae91cfb180,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a61c720f6776a3d419883bae91cfb180, type: 3}
 --- !u!4 &166283196 stripped
@@ -429,9 +449,10 @@ GameObject:
   m_Component:
   - component: {fileID: 170076735}
   - component: {fileID: 170076734}
+  - component: {fileID: 170076736}
   m_Layer: 0
   m_Name: Directional Light
-  m_TagString: Untagged
+  m_TagString: DirectionalLight1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,9 +528,24 @@ Transform:
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 421548682}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &170076736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170076733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d54f9900a484c643bd4b6c2533f41f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Direction: {x: -0.3213938, y: -0.76604444, z: 0.5566705}
+  Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  Intensity: 1
 --- !u!1001 &277757904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,6 +628,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.40416998
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &277757905 stripped
@@ -667,6 +713,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &303762178 stripped
@@ -704,13 +760,14 @@ Transform:
   m_Children:
   - {fileID: 588970566}
   - {fileID: 534669905}
+  - {fileID: 170076735}
   - {fileID: 4100358355650506295}
   - {fileID: 148080654}
   - {fileID: 1852967098}
   - {fileID: 685993357}
   - {fileID: 2033572493}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -965,6 +1022,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.22373
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &631588226 stripped
@@ -1040,6 +1107,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &662410308 stripped
@@ -1091,7 +1168,7 @@ Transform:
   - {fileID: 163069984}
   - {fileID: 897023297}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &696001734
 PrefabInstance:
@@ -1175,6 +1252,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.51091176
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &696001735 stripped
@@ -1250,6 +1337,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &705338053 stripped
@@ -1325,6 +1422,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &713117656 stripped
@@ -1400,6 +1507,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &720260158 stripped
@@ -1475,6 +1592,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbefeb5142414d144b98d620680d1f5e, type: 3}
 --- !u!4 &897023297 stripped
@@ -1522,98 +1649,117 @@ MonoBehaviour:
     18 95\" localRotation=\"-200 180 180\" localScale=\"1 1 1\" />\r\n      <CameraComponent
     />\r\n      <ThirdPersonControllerComponent targetId=\"Snowball\" distance=\"20\"
     />\r\n    </Components>\r\n    <Children />\r\n  </GameObject>\r\n  <GameObject
-    id=\"Snowball\" name=\"Snowball\">\r\n    <Components>\r\n      <TransformComponent
-    localPosition=\"-5 15 75\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n
-    \     <SphereColliderComponent physicsMaterial=\"Snowball\" offset=\"0 0 0\" radius=\"0.5\"
-    trigger=\"false\" />\r\n      <RigidDynamicComponent CCD=\"true\" kinematic=\"false\"
-    mass=\"1\" maxLinearVelocity=\"80\" maxAngularVelocity=\"100\" raycastLayerMask=\"0\"
-    />\r\n      <PlayerComponent />\r\n    </Components>\r\n    <Children>\r\n      <GameObject
-    name=\"SnowballMesh\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"0.003305583 0.003305583
-    0.003305583\" />\r\n          <MeshRendererComponent material=\"Snowball\" mesh=\"Snowball\"
-    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \   </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Trees\">\r\n    <Components>\r\n
-    \     <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1
-    1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"-2.71 10
-    8.23\" localRotation=\"0 -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
+    id=\"DirectionalLight\" name=\"Directional Light\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 3 0\" localRotation=\"50 -330 0\" localScale=\"1 1 1\" />\r\n
+    \     <DirectionalLightComponent direction=\"-0.3213938 -0.7660444 0.5566705\"
+    color=\"1 0.9568627 0.8392157\" intensity=\"1\" />\r\n    </Components>\r\n    <Children
+    />\r\n  </GameObject>\r\n  <GameObject id=\"Snowball\" name=\"Snowball\">\r\n
+    \   <Components>\r\n      <TransformComponent localPosition=\"-5 15 75\" localRotation=\"0
+    0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent physicsMaterial=\"Snowball\"
+    offset=\"0 0 0\" radius=\"0.5\" trigger=\"false\" />\r\n      <RigidDynamicComponent
+    CCD=\"true\" kinematic=\"false\" mass=\"1\" maxLinearVelocity=\"80\" maxAngularVelocity=\"100\"
+    raycastLayerMask=\"2\" />\r\n      <PlayerComponent />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"SnowballMesh\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\"
+    localScale=\"0.003305583 0.003305583 0.003305583\" />\r\n          <MeshRendererComponent
+    material=\"Snowball\" mesh=\"Snowball\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n        </Components>\r\n        <Children
+    />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject
+    name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
+    -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
     (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-4.03
     10.015 7.78\" localRotation=\"0 -79.4 0\" localScale=\"0.18167 0.18167 0.18167\"
-    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"TreePineSnow (2)\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"-3.75 10.015 9.1\" localRotation=\"0 -191.6 0\" localScale=\"0.1816701
     0.18167 0.1816701\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    mesh=\"TreePineSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"TreePineSnow (3)\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"-7.68 9.97 3.52\" localRotation=\"0
     -6.5 0\" localScale=\"0.4033075 0.4033074 0.4033075\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
     (4)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
     10 86.25\" localRotation=\"0 0 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n
-    \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"TreePineSnow (5)\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"-3.58 10 87.16\" localRotation=\"0 -43.66 0\" localScale=\"0.4041666
     0.4041666 0.4041666\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    mesh=\"TreePineSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"TreePineSnow (6)\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"-1.85 10 84.67\" localRotation=\"0
     -355.95 0\" localScale=\"0.1848099 0.1848099 0.1848099\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
     (7)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-13.8
     10 80.8\" localRotation=\"0 -10.64 0\" localScale=\"0.223731 0.223731 0.223731\"
-    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"TreePineSnow (8)\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"-15.93 10 75.38\" localRotation=\"0 -1.989995 0\" localScale=\"0.40417
     0.40417 0.40417\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    mesh=\"TreePineSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"TreePineSnow (9)\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"6.06 10 78.49\" localRotation=\"0
     -116.7 0\" localScale=\"0.40417 0.40417 0.40417\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"TreePineSnow
     (10)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"7.91
     10 75.71\" localRotation=\"0 -51.84 0\" localScale=\"0.22373 0.22373 0.22373\"
-    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"TreePineSnow (11)\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"4.84 10 75.89\" localRotation=\"0 -91.3 0\" localScale=\"0.18481
     0.18481 0.18481\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    mesh=\"TreePineSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"TreePineSnow (12)\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"5.38 10 70.52\" localRotation=\"0
     -116.7 0\" localScale=\"0.5109118 0.5109112 0.5109118\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"TreePineSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
@@ -1625,7 +1771,8 @@ MonoBehaviour:
     1 0\" length=\"10\" time=\"5\" />\r\n        </Components>\r\n        <Children>\r\n
     \         <GameObject name=\"BlockMoving\">\r\n            <Components>\r\n              <TransformComponent
     localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n              <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockMoving\" />\r\n              <BoxColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockMoving\">\r\n                <DirectionalLight
+    use=\"DirectionalLight\" />\r\n              </MeshRendererComponent>\r\n              <BoxColliderComponent
     physicsMaterial=\"Default\" offset=\"-5 1.25 5\" halfExtent=\"5 1.25 5\" trigger=\"false\"
     />\r\n              <RigidDynamicComponent CCD=\"false\" kinematic=\"true\" mass=\"999999\"
     maxLinearVelocity=\"100000\" maxAngularVelocity=\"100\" raycastLayerMask=\"1\"
@@ -1637,109 +1784,127 @@ MonoBehaviour:
     \       <Children>\r\n          <GameObject name=\"BlockMoving\">\r\n            <Components>\r\n
     \             <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0
     0\" localScale=\"1 1 1\" />\r\n              <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"BlockMoving\" />\r\n              <BoxColliderComponent physicsMaterial=\"Default\"
-    offset=\"-5 1.25 5\" halfExtent=\"5 1.25 5\" trigger=\"false\" />\r\n              <RigidDynamicComponent
-    CCD=\"false\" kinematic=\"true\" mass=\"999999\" maxLinearVelocity=\"100000\"
-    maxAngularVelocity=\"100\" raycastLayerMask=\"1\" />\r\n            </Components>\r\n
-    \           <Children />\r\n          </GameObject>\r\n          <GameObject name=\"Flag\">\r\n
-    \           <Components>\r\n              <TransformComponent localPosition=\"-2.09
-    2.5 7.55\" localRotation=\"0 -90.12739 0\" localScale=\"0.5000001 0.5 0.5000001\"
-    />\r\n              <MeshRendererComponent material=\"StandardDefault\" mesh=\"Flag\"
-    />\r\n              <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Flag\"
-    offset=\"0 0 0\" />\r\n              <BoxColliderComponent physicsMaterial=\"Default\"
-    offset=\"-3 3 3\" halfExtent=\"3 3 3\" trigger=\"true\" />\r\n              <RigidStaticComponent
-    raycastLayerMask=\"1\" />\r\n              <FlagComponent />\r\n            </Components>\r\n
-    \           <Children />\r\n          </GameObject>\r\n        </Children>\r\n
-    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Blocks\">\r\n
-    \   <Components>\r\n      <TransformComponent localPosition=\"0 0 0\" localRotation=\"0
-    0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject
-    name=\"BlockSnowSlope\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"0 0 10\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowSlope\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\"
-    />\r\n          <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"0 0 0\"
-    localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
-    \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
-    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    -10 20\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
-    \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
-    (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    -10 30\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
-    \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
-    (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    -10 40\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
-    \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowSlope
-    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-10
-    0 60\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowSlope\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\"
-    />\r\n          <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
-    (4)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    0 60\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
-    \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"-10 0 70\"
-    localRotation=\"0 -90 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\" />\r\n          <MeshColliderComponent
-    physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\" offset=\"0
-    0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge
-    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    0 70\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\" />\r\n          <MeshColliderComponent
+    mesh=\"BlockMoving\">\r\n                <DirectionalLight use=\"DirectionalLight\"
+    />\r\n              </MeshRendererComponent>\r\n              <BoxColliderComponent
+    physicsMaterial=\"Default\" offset=\"-5 1.25 5\" halfExtent=\"5 1.25 5\" trigger=\"false\"
+    />\r\n              <RigidDynamicComponent CCD=\"false\" kinematic=\"true\" mass=\"999999\"
+    maxLinearVelocity=\"100000\" maxAngularVelocity=\"100\" raycastLayerMask=\"1\"
+    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
+    \         <GameObject name=\"Flag\">\r\n            <Components>\r\n              <TransformComponent
+    localPosition=\"-2.09 2.5 7.55\" localRotation=\"0 -90.12739 0\" localScale=\"0.5000001
+    0.5 0.5000001\" />\r\n              <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"Flag\">\r\n                <DirectionalLight use=\"DirectionalLight\" />\r\n
+    \             </MeshRendererComponent>\r\n              <MeshColliderComponent
+    physicsMaterial=\"Default\" collisionMesh=\"Flag\" offset=\"0 0 0\" />\r\n              <BoxColliderComponent
+    physicsMaterial=\"Default\" offset=\"-3 3 3\" halfExtent=\"3 3 3\" trigger=\"true\"
+    />\r\n              <RigidStaticComponent raycastLayerMask=\"1\" />\r\n              <FlagComponent
+    />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
+    \       </Children>\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
+    \ <GameObject name=\"Blocks\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"BlockSnowSlope\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 10\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnowSlope\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow (1)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 -10 20\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow (2)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 -10 30\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow (3)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 -10 40\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnowSlope (1)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-10 0 60\" localRotation=\"0 -180
+    0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnowSlope\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow (4)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 60\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-10 0 70\" localRotation=\"0 -90
+    0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnowCornerLarge\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnowCornerLarge\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge (1)\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"0 0 70\"
+    localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\" offset=\"0
     0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
     (5)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
     0 70\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
     (6)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"10
     0 70\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
     (7)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-10
     0 70\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnow
     (8)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
     0 80\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnow\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockSnow\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n
     \         <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge
     (2)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
     0 80\" localRotation=\"0 -270 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\" offset=\"0
     0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"BlockSnowCornerLarge
     (3)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-10
     0 80\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
-    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\" />\r\n          <MeshColliderComponent
+    material=\"StandardDefault\" mesh=\"BlockSnowCornerLarge\">\r\n            <DirectionalLight
+    use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent
     physicsMaterial=\"Default\" collisionMesh=\"BlockSnowCornerLarge\" offset=\"0
     0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
@@ -1748,33 +1913,38 @@ MonoBehaviour:
     \   <Children>\r\n      <GameObject name=\"Coin\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"-5 1.5 35\" localRotation=\"0 0
     0\" localScale=\"0.5 0.5 0.5\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"Coin\" />\r\n          <BoxColliderComponent physicsMaterial=\"Default\"
+    mesh=\"Coin\">\r\n            <DirectionalLight use=\"DirectionalLight\" />\r\n
+    \         </MeshRendererComponent>\r\n          <BoxColliderComponent physicsMaterial=\"Default\"
     offset=\"0 0 0\" halfExtent=\"2.5 2.5 2.5\" trigger=\"true\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n          <RotateComponent rotationDirection=\"0
     1 0\" speed=\"5\" />\r\n          <CoinComponent />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"Snowman\">\r\n
     \       <Components>\r\n          <TransformComponent localPosition=\"-12.28 10
     67.72\" localRotation=\"0 -135 0\" localScale=\"0.5000002 0.5 0.5000002\" />\r\n
-    \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"Snowman\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Snowman\"
+    \         <MeshRendererComponent material=\"StandardDefault\" mesh=\"Snowman\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Snowman\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"Rocks\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"-12.88 10 87.92\" localRotation=\"0 -180 0\" localScale=\"1 1
-    1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"Rocks\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Rocks\"
+    1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"Rocks\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Rocks\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"Mushrooms\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"-2.7 10 83.84\" localRotation=\"0 0 0\" localScale=\"0.2 0.2 0.2\"
-    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"Mushrooms\"
-    />\r\n          <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Mushrooms\"
+    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"Mushrooms\">\r\n
+    \           <DirectionalLight use=\"DirectionalLight\" />\r\n          </MeshRendererComponent>\r\n
+    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Mushrooms\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
     \     <GameObject name=\"Mushrooms (1)\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"7.64 10 74.91\" localRotation=\"0 -63.61 0\" localScale=\"0.2
     0.2 0.2\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"Mushrooms\" />\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    mesh=\"Mushrooms\">\r\n            <DirectionalLight use=\"DirectionalLight\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"Mushrooms\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
@@ -1859,6 +2029,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &931606020 stripped
@@ -1934,6 +2114,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &1004531562 stripped
@@ -2009,6 +2199,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4594573558393014743, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594573558393014743, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9393f49f42a3e0428f859c63ffbd361, type: 3}
 --- !u!4 &1078522946 stripped
@@ -2120,6 +2320,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.4033074
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &1128269576 stripped
@@ -2210,6 +2420,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.18481
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &1217287160 stripped
@@ -2300,6 +2520,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.40416998
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &1247629182 stripped
@@ -2375,6 +2605,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbefeb5142414d144b98d620680d1f5e, type: 3}
 --- !u!4 &1251316191 stripped
@@ -2465,6 +2705,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.18480994
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &1281774476 stripped
@@ -2540,6 +2790,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &1409058622 stripped
@@ -2615,6 +2875,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37dac6524fe1911418c369c2641725ee, type: 3}
 --- !u!4 &1445948763 stripped
@@ -2705,6 +2975,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.40416664
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &1479522598 stripped
@@ -2766,7 +3046,7 @@ PrefabInstance:
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
@@ -2788,6 +3068,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6259422310562706004, guid: e2ceee27fcddfb641994279b70c4db13,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259422310562706004, guid: e2ceee27fcddfb641994279b70c4db13,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ceee27fcddfb641994279b70c4db13, type: 3}
 --- !u!1 &1638345324 stripped
@@ -2875,6 +3165,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!4 &1746641608 stripped
@@ -2913,7 +3213,7 @@ Transform:
   - {fileID: 3059554267892444364}
   - {fileID: 1078522946}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1977632795
 PrefabInstance:
@@ -2997,6 +3297,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.22373098
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &1977632796 stripped
@@ -3038,7 +3348,7 @@ Transform:
   - {fileID: 1774984380147544130}
   - {fileID: 166283196}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2058742710
 PrefabInstance:
@@ -3122,6 +3432,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.18167
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &2058742711 stripped
@@ -3212,6 +3532,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.18167
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!4 &2140370832 stripped
@@ -3287,6 +3617,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37dac6524fe1911418c369c2641725ee, type: 3}
 --- !u!1001 &1024191150764184563
@@ -3356,6 +3696,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241504648179090475, guid: bbefeb5142414d144b98d620680d1f5e,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbefeb5142414d144b98d620680d1f5e, type: 3}
 --- !u!4 &1421366817998444903 stripped
@@ -3443,6 +3793,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4832483262760623209, guid: 72105cf6d3e53834996e531f25d97fea,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832483262760623209, guid: 72105cf6d3e53834996e531f25d97fea,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72105cf6d3e53834996e531f25d97fea, type: 3}
 --- !u!1 &1872804874670084796 stripped
@@ -3534,6 +3894,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015524254803275610, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5bf218858d7f14ea612a5fb0a3c9dd, type: 3}
 --- !u!1001 &2731562594414795657
@@ -3603,6 +3973,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
 --- !u!1001 &2916839032744876053
@@ -3672,6 +4052,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8313933065152655177, guid: a61c720f6776a3d419883bae91cfb180,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313933065152655177, guid: a61c720f6776a3d419883bae91cfb180,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a61c720f6776a3d419883bae91cfb180, type: 3}
 --- !u!4 &3059554267892444364 stripped
@@ -3768,6 +4158,16 @@ PrefabInstance:
       propertyPath: rotationDirection.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1133382026467127380, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133382026467127380, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 047c0b8cd2b78af489e6bd606db14d9b, type: 3}
 --- !u!4 &4100358355650506295 stripped
@@ -3882,6 +4282,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2699095654999649397, guid: 84e3d87c9ab8670428d77c7bcff63073,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2699095654999649397, guid: 84e3d87c9ab8670428d77c7bcff63073,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e3d87c9ab8670428d77c7bcff63073, type: 3}
 --- !u!4 &7863403084540216984 stripped
@@ -3972,6 +4382,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.50000024
       objectReference: {fileID: 0}
+    - target: {fileID: 1324326493507170455, guid: d77b124f6bbfe8843aa32eba7f15a463,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324326493507170455, guid: d77b124f6bbfe8843aa32eba7f15a463,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d77b124f6bbfe8843aa32eba7f15a463, type: 3}
 --- !u!1001 &8526427668816927299
@@ -4041,5 +4461,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4594573558393014743, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594573558393014743, guid: a9393f49f42a3e0428f859c63ffbd361,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 170076736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9393f49f42a3e0428f859c63ffbd361, type: 3}
