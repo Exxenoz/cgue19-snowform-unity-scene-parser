@@ -276,9 +276,23 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("DirectionalLightComponent");
-                e.Add(new XAttribute("direction", ToString(c.Direction)));
                 e.Add(new XAttribute("color", ToString(new Vector3(c.Color.r, c.Color.g, c.Color.b))));
                 e.Add(new XAttribute("intensity", ToString(c.Intensity)));
+                e.Add(new XAttribute("shadow", c.Shadow));
+                if (c.ShadowMapWidth > 0)
+                {
+                    e.Add(new XAttribute("shadowMapWidth", c.ShadowMapWidth));
+                }
+                if (c.ShadowMapHeight > 0)
+                {
+                    e.Add(new XAttribute("shadowMapHeight", c.ShadowMapHeight));
+                }
+                e.Add(new XAttribute("shadowMapOrthoLeft", c.ShadowMapOrthoLeft));
+                e.Add(new XAttribute("shadowMapOrthoRight", c.ShadowMapOrthoRight));
+                e.Add(new XAttribute("shadowMapOrthoBottom", c.ShadowMapOrthoBottom));
+                e.Add(new XAttribute("shadowMapOrthoTop", c.ShadowMapOrthoTop));
+                e.Add(new XAttribute("shadowMapOrthoNear", c.ShadowMapOrthoNear));
+                e.Add(new XAttribute("shadowMapOrthoFar", c.ShadowMapOrthoFar));
                 componentsElement.Add(e);
             }
         }
@@ -310,6 +324,30 @@ public class SceneExporter : MonoBehaviour
                 e.Add(new XAttribute("constant", ToString(c.Constant)));
                 e.Add(new XAttribute("linear", ToString(c.Linear)));
                 e.Add(new XAttribute("quadratic", ToString(c.Quadratic)));
+                componentsElement.Add(e);
+            }
+        }
+
+        {
+            SFFollowComponent c = transform.GetComponent<SFFollowComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("FollowComponent");
+                if (c.Target != null)
+                {
+                    if (!string.IsNullOrEmpty(c.Target.tag) && c.Target.tag != "Untagged")
+                    {
+                        e.Add(new XAttribute("targetId", c.Target.tag));
+                    }
+                    else
+                    {
+                        Debug.LogError("Could not set target id for follow component of game object '" + c.gameObject.name + "', because target has no tag set!");
+                    }
+                }
+                else
+                {
+                    Debug.LogError("Could not set target id for follow component of game object '" + c.gameObject.name + "', because target is null!");
+                }
                 componentsElement.Add(e);
             }
         }
