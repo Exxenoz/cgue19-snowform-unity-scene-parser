@@ -1510,6 +1510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enabled: 1
+  PrewarmTime: 5
   ParticleCount: 5000
   ParticleMaterial: SnowParticle
   ParticleMesh: SnowParticle
@@ -1978,7 +1979,7 @@ MonoBehaviour:
     \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Particle
     Systems\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
     0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
-    \   <Children>\r\n      <GameObject name=\"Particle System Snow\">\r\n        <Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"Particle System Snowing\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"-5 30 46.8\" localRotation=\"0 0
     0\" localScale=\"30 1 100\" />\r\n          <ParticleSystemComponent enabled=\"true\"
     particleCount=\"5000\" particleMaterial=\"SnowParticle\" particleMesh=\"SnowParticle\"

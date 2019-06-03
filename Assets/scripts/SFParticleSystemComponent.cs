@@ -5,6 +5,7 @@ using UnityEngine;
 public class SFParticleSystemComponent : MonoBehaviour
 {
     public bool Enabled = true;
+    public float PrewarmTime = 0f;
     public int ParticleCount;
     public string ParticleMaterial;
     public string ParticleMesh;

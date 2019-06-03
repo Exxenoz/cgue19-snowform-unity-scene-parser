@@ -358,6 +358,7 @@ public class SceneExporter : MonoBehaviour
             {
                 XElement e = new XElement("ParticleSystemComponent");
                 e.Add(new XAttribute("enabled", ToString(c.Enabled)));
+                e.Add(new XAttribute("prewarmTime", ToString(c.PrewarmTime)));
                 e.Add(new XAttribute("particleCount", c.ParticleCount));
                 e.Add(new XAttribute("particleMaterial", c.ParticleMaterial));
                 e.Add(new XAttribute("particleMesh", c.ParticleMesh));
