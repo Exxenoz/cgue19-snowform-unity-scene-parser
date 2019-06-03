@@ -352,6 +352,27 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFParticleSystemComponent c = transform.GetComponent<SFParticleSystemComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("ParticleSystemComponent");
+                e.Add(new XAttribute("enabled", ToString(c.Enabled)));
+                e.Add(new XAttribute("particleCount", c.ParticleCount));
+                e.Add(new XAttribute("particleMaterial", c.ParticleMaterial));
+                e.Add(new XAttribute("particleMesh", c.ParticleMesh));
+                e.Add(new XAttribute("minRelativeEmitPosition", ToString(c.MinRelativeEmitPosition)));
+                e.Add(new XAttribute("maxRelativeEmitPosition", ToString(c.MaxRelativeEmitPosition)));
+                e.Add(new XAttribute("minParticleVelocity", ToString(c.MinParticleVelocity)));
+                e.Add(new XAttribute("maxParticleVelocity", ToString(c.MaxParticleVelocity)));
+                e.Add(new XAttribute("minParticleSize", ToString(c.MinParticleSize)));
+                e.Add(new XAttribute("maxParticleSize", ToString(c.MaxParticleSize)));
+                e.Add(new XAttribute("minParticleLifetime", ToString(c.MinParticleLifetime)));
+                e.Add(new XAttribute("maxParticleLifetime", ToString(c.MaxParticleLifetime)));
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");

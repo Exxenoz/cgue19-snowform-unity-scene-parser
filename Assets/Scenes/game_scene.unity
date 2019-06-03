@@ -659,6 +659,7 @@ Transform:
   - {fileID: 1852967098}
   - {fileID: 685993357}
   - {fileID: 2033572493}
+  - {fileID: 818552348}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1418,6 +1419,139 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 720260157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &807709115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807709116}
+  - component: {fileID: 807709119}
+  - component: {fileID: 807709118}
+  - component: {fileID: 807709117}
+  m_Layer: 0
+  m_Name: Particle System Snowing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807709116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807709115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 30, z: 46.8}
+  m_LocalScale: {x: 30, y: 1, z: 100}
+  m_Children: []
+  m_Father: {fileID: 818552348}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &807709117
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807709115}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &807709118
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807709115}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &807709119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807709115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5127b77a0eb05874d97fb2e876ba49dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enabled: 1
+  ParticleCount: 5000
+  ParticleMaterial: SnowParticle
+  ParticleMesh: SnowParticle
+  MinRelativeEmitPosition: {x: -15, y: 0, z: -50}
+  MaxRelativeEmitPosition: {x: 15, y: 0, z: 50}
+  MinParticleVelocity: {x: 0, y: -1, z: 0}
+  MaxParticleVelocity: {x: 0, y: -3, z: 0}
+  MinParticleSize: 0.01
+  MaxParticleSize: 0.2
+  MinParticleLifetime: 5
+  MaxParticleLifetime: 15
+--- !u!1 &818552347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818552348}
+  m_Layer: 0
+  m_Name: Particle Systems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &818552348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818552347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 807709116}
+  m_Father: {fileID: 421548682}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &897023296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1547,7 +1681,7 @@ MonoBehaviour:
     \   <Children>\r\n      <GameObject id=\"DirectionalLight1\" name=\"Directional
     Light 1\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-29.1
     21 25\" localRotation=\"50 -270 0\" localScale=\"30 1 40\" />\r\n          <DirectionalLightComponent
-    color=\"1 1 1\" intensity=\"1\" shadow=\"true\" shadowMapWidth=\"2048\" shadowMapHeight=\"2048\"
+    color=\"1 1 1\" intensity=\"1\" shadow=\"true\" shadowMapWidth=\"4096\" shadowMapHeight=\"4096\"
     shadowMapOrthoLeft=\"-50\" shadowMapOrthoRight=\"90\" shadowMapOrthoBottom=\"-25\"
     shadowMapOrthoTop=\"30\" shadowMapOrthoNear=\"1\" shadowMapOrthoFar=\"60\" />\r\n
     \       </Components>\r\n        <Children />\r\n      </GameObject>\r\n    </Children>\r\n
@@ -1841,7 +1975,17 @@ MonoBehaviour:
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"Mushrooms\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
-    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
+    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Particle
+    Systems\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"Particle System Snow\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-5 30 46.8\" localRotation=\"0 0
+    0\" localScale=\"30 1 100\" />\r\n          <ParticleSystemComponent enabled=\"true\"
+    particleCount=\"5000\" particleMaterial=\"SnowParticle\" particleMesh=\"SnowParticle\"
+    minRelativeEmitPosition=\"-15 0 -50\" maxRelativeEmitPosition=\"15 0 50\" minParticleVelocity=\"0
+    -1 0\" maxParticleVelocity=\"0 -3 0\" minParticleSize=\"0.01\" maxParticleSize=\"0.2\"
+    minParticleLifetime=\"5\" maxParticleLifetime=\"15\" />\r\n        </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
 --- !u!4 &913051497
 Transform:
   m_ObjectHideFlags: 0
