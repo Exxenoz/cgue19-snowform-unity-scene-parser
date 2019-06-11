@@ -252,7 +252,7 @@ Transform:
   - {fileID: 1217287160}
   - {fileID: 696001735}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &163069983
 PrefabInstance:
@@ -304,7 +304,7 @@ PrefabInstance:
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
@@ -389,7 +389,7 @@ PrefabInstance:
     - target: {fileID: 1774984380147544130, guid: a61c720f6776a3d419883bae91cfb180,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1774984380147544130, guid: a61c720f6776a3d419883bae91cfb180,
         type: 3}
@@ -589,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -653,6 +653,7 @@ Transform:
   m_Children:
   - {fileID: 588970566}
   - {fileID: 534669905}
+  - {fileID: 1789934708}
   - {fileID: 1672776405}
   - {fileID: 148080654}
   - {fileID: 4100358355650506295}
@@ -663,6 +664,100 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &460917848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3059554267892444364}
+    m_Modifications:
+    - target: {fileID: 1105470420161528156, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_Name
+      value: Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776770171361642652, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: rotationDirection.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776770171361642652, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776770171361642652, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: rotationDirection.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133382026467127380, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133382026467127380, guid: 047c0b8cd2b78af489e6bd606db14d9b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1493852774}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 047c0b8cd2b78af489e6bd606db14d9b, type: 3}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +1064,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -999,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -1061,12 +1156,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1421366817998444903}
   - {fileID: 4971982048744600357}
   - {fileID: 705338053}
   - {fileID: 720260158}
   - {fileID: 662410308}
-  - {fileID: 1445948763}
   - {fileID: 303762178}
   - {fileID: 5640631108243118932}
   - {fileID: 1251316191}
@@ -1076,8 +1169,10 @@ Transform:
   - {fileID: 1409058622}
   - {fileID: 163069984}
   - {fileID: 897023297}
+  - {fileID: 891689191}
+  - {fileID: 1941388667}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &696001734
 PrefabInstance:
@@ -1199,7 +1294,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -1229,7 +1324,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -1314,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -1369,7 +1464,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -1399,7 +1494,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -1566,8 +1661,93 @@ Transform:
   m_Children:
   - {fileID: 807709116}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &891689190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 685993357}
+    m_Modifications:
+    - target: {fileID: 3949580493925563870, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_Name
+      value: BlockSnow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1493852774}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
+--- !u!4 &891689191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+    type: 3}
+  m_PrefabInstance: {fileID: 891689190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &897023296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1618,7 +1798,7 @@ PrefabInstance:
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
@@ -1685,7 +1865,7 @@ MonoBehaviour:
   SceneTransform: {fileID: 421548682}
   Output: "<Scene>\r\n  <GameObject name=\"Scene Options\">\r\n    <Components>\r\n
     \     <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1
-    1 1\" />\r\n      <SceneOptionComponent key=\"NextLevelScene\" value=\"game_scene2.xml\"
+    1 1\" />\r\n      <SceneOptionComponent key=\"NextLevelScene\" value=\"assets/scenes/game_scene2.xml\"
     />\r\n      <SceneOptionComponent key=\"RemainingTime\" value=\"02:00\" />\r\n
     \     <SceneOptionComponent key=\"TransitionTime\" value=\"1\" />\r\n    </Components>\r\n
     \   <Children />\r\n  </GameObject>\r\n  <GameObject id=\"MainCamera\" name=\"Main
@@ -1699,14 +1879,12 @@ MonoBehaviour:
     Light 1\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-29.1
     21 25\" localRotation=\"50 -270 0\" localScale=\"30 1 40\" />\r\n          <DirectionalLightComponent
     color=\"1 1 1\" intensity=\"1\" shadow=\"true\" shadowMapWidth=\"4096\" shadowMapHeight=\"4096\"
-    shadowMapOrthoLeft=\"-50\" shadowMapOrthoRight=\"90\" shadowMapOrthoBottom=\"-25\"
-    shadowMapOrthoTop=\"30\" shadowMapOrthoNear=\"1\" shadowMapOrthoFar=\"60\" />\r\n
-    \       </Components>\r\n        <Children />\r\n      </GameObject>\r\n    </Children>\r\n
-    \ </GameObject>\r\n  <GameObject name=\"Trees\">\r\n    <Components>\r\n      <TransformComponent
-    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
-    \   <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"-2.71 10 8.23\" localRotation=\"0
-    -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
+    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
+    \   </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Trees\">\r\n    <Components>\r\n
+    \     <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1
+    1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject name=\"TreePineSnow\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"-2.71 10
+    8.23\" localRotation=\"0 -45 0\" localScale=\"0.2455 0.2455 0.2455\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"TreePineSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\"
     />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"TreePineSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
@@ -1822,14 +2000,22 @@ MonoBehaviour:
     />\r\n              <RigidDynamicComponent CCD=\"false\" kinematic=\"true\" mass=\"999999\"
     maxLinearVelocity=\"100000\" maxAngularVelocity=\"100\" raycastLayerMask=\"1\"
     />\r\n            </Components>\r\n            <Children />\r\n          </GameObject>\r\n
-    \       </Children>\r\n      </GameObject>\r\n      <GameObject name=\"BlockMovingGroup
-    (1)\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"0
-    10 -30\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n          <MovingPlatformComponent
-    moveDirection=\"0 1 0\" length=\"5\" time=\"5\" />\r\n        </Components>\r\n
-    \       <Children>\r\n          <GameObject name=\"BlockMoving\">\r\n            <Components>\r\n
-    \             <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0
-    0\" localScale=\"1 1 1\" />\r\n              <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"BlockMoving\">\r\n                <Light gameObjectId=\"DirectionalLight1\"
+    \         <GameObject name=\"Coin (1)\">\r\n            <Components>\r\n              <TransformComponent
+    localPosition=\"-5 4 5\" localRotation=\"0 0 0\" localScale=\"0.5 0.5 0.5\" />\r\n
+    \             <MeshRendererComponent material=\"StandardDefault\" mesh=\"Coin\">\r\n
+    \               <Light gameObjectId=\"DirectionalLight1\" />\r\n              </MeshRendererComponent>\r\n
+    \             <BoxColliderComponent physicsMaterial=\"Default\" offset=\"0 0 0\"
+    halfExtent=\"2.5 2.5 2.5\" trigger=\"false\" />\r\n              <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n              <RotateComponent rotationDirection=\"0
+    1 0\" speed=\"5\" />\r\n              <CoinComponent />\r\n            </Components>\r\n
+    \           <Children />\r\n          </GameObject>\r\n        </Children>\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockMovingGroup (1)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 10 -30\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MovingPlatformComponent moveDirection=\"0
+    1 0\" length=\"5\" time=\"5\" />\r\n        </Components>\r\n        <Children>\r\n
+    \         <GameObject name=\"BlockMoving\">\r\n            <Components>\r\n              <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n              <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"BlockMoving\">\r\n                <Light gameObjectId=\"DirectionalLight1\"
     />\r\n              </MeshRendererComponent>\r\n              <BoxColliderComponent
     physicsMaterial=\"Default\" offset=\"-5 1.25 5\" halfExtent=\"5 1.25 5\" trigger=\"false\"
     />\r\n              <RigidDynamicComponent CCD=\"false\" kinematic=\"true\" mass=\"999999\"
@@ -1847,14 +2033,7 @@ MonoBehaviour:
     \       </Children>\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
     \ <GameObject name=\"Blocks\">\r\n    <Components>\r\n      <TransformComponent
     localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
-    \   <Children>\r\n      <GameObject name=\"BlockSnowSlope\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 10\" localRotation=\"0 0 0\"
-    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"BlockSnowSlope\">\r\n            <Light gameObjectId=\"DirectionalLight1\"
-    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
-    collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
-    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
-    \     </GameObject>\r\n      <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"BlockSnow\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"0 0 0\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
@@ -1862,32 +2041,25 @@ MonoBehaviour:
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (1)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 -10 20\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 20\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (2)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 -10 30\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 30\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (3)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 -10 40\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 40\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
-    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
-    \     </GameObject>\r\n      <GameObject name=\"BlockSnowSlope (1)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"-10 0 60\" localRotation=\"0 -180
-    0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
-    mesh=\"BlockSnowSlope\">\r\n            <Light gameObjectId=\"DirectionalLight1\"
-    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
-    collisionMesh=\"BlockSnowSlope\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (4)\">\r\n        <Components>\r\n
     \         <TransformComponent localPosition=\"0 0 60\" localRotation=\"0 0 0\"
@@ -1953,11 +2125,25 @@ MonoBehaviour:
     />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnowCornerLarge\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow (9)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 50\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
+    \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"BlockSnow (10)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"0 0 10\" localRotation=\"0 0 0\"
+    localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
+    \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n  <GameObject name=\"Misc\">\r\n
     \   <Components>\r\n      <TransformComponent localPosition=\"0 0 0\" localRotation=\"0
     0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n    <Children>\r\n      <GameObject
     name=\"Coin\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-5
-    1.5 35\" localRotation=\"0 0 0\" localScale=\"0.5 0.5 0.5\" />\r\n          <MeshRendererComponent
+    11.5 35\" localRotation=\"0 0 0\" localScale=\"0.5 0.5 0.5\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"Coin\">\r\n            <Light gameObjectId=\"DirectionalLight1\"
     />\r\n          </MeshRendererComponent>\r\n          <BoxColliderComponent physicsMaterial=\"Default\"
     offset=\"0 0 0\" halfExtent=\"2.5 2.5 2.5\" trigger=\"true\" />\r\n          <RigidStaticComponent
@@ -2152,7 +2338,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -2643,7 +2829,7 @@ PrefabInstance:
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
@@ -2828,7 +3014,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -2862,91 +3048,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
     type: 3}
   m_PrefabInstance: {fileID: 1409058621}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1445948762
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 685993357}
-    m_Modifications:
-    - target: {fileID: 6954178394317664052, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_Name
-      value: BlockSnowSlope (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: directionalLights.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: directionalLights.Array.data[0]
-      value: 
-      objectReference: {fileID: 1493852774}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 37dac6524fe1911418c369c2641725ee, type: 3}
---- !u!4 &1445948763 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1445948762}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1479522597
 PrefabInstance:
@@ -3100,12 +3201,6 @@ MonoBehaviour:
   Shadow: 1
   ShadowMapWidth: 4096
   ShadowMapHeight: 4096
-  ShadowMapOrthoLeft: -50
-  ShadowMapOrthoRight: 90
-  ShadowMapOrthoBottom: -25
-  ShadowMapOrthoTop: 30
-  ShadowMapOrthoNear: 1
-  ShadowMapOrthoFar: 60
 --- !u!108 &1493852775
 Light:
   m_ObjectHideFlags: 0
@@ -3307,7 +3402,7 @@ PrefabInstance:
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4100358355650506295, guid: e2ceee27fcddfb641994279b70c4db13,
         type: 3}
@@ -3388,7 +3483,7 @@ Transform:
   m_Children:
   - {fileID: 1493852773}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726274417
 GameObject:
@@ -3531,7 +3626,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -3566,6 +3661,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1746641607}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1789934707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789934708}
+  - component: {fileID: 1789934709}
+  m_Layer: 0
+  m_Name: Skybox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789934708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789934707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_Children: []
+  m_Father: {fileID: 421548682}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1789934709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789934707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351b081f18cf700439d5456fcb041528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Material: Skybox
+  Mesh: Skybox
+  directionalLights: []
+  pointLights: []
+  spotLights: []
 --- !u!1 &1852967097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,8 +3739,93 @@ Transform:
   - {fileID: 3059554267892444364}
   - {fileID: 1078522946}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1941388666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 685993357}
+    m_Modifications:
+    - target: {fileID: 3949580493925563870, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_Name
+      value: BlockSnow (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025902513519929324, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+        type: 3}
+      propertyPath: directionalLights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1493852774}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 881914c12431b7146aa5b6e7e7f5e67b, type: 3}
+--- !u!4 &1941388667 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1941388666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1977632795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3731,7 +3959,7 @@ Transform:
   - {fileID: 1774984380147544130}
   - {fileID: 166283196}
   m_Father: {fileID: 421548682}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2058742710
 PrefabInstance:
@@ -3933,85 +4161,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2140370831}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &650097286473261484
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 685993357}
-    m_Modifications:
-    - target: {fileID: 6954178394317664052, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_Name
-      value: BlockSnowSlope
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: directionalLights.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6918254736318202537, guid: 37dac6524fe1911418c369c2641725ee,
-        type: 3}
-      propertyPath: directionalLights.Array.data[0]
-      value: 
-      objectReference: {fileID: 1493852774}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 37dac6524fe1911418c369c2641725ee, type: 3}
 --- !u!1001 &1024191150764184563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4062,7 +4211,7 @@ PrefabInstance:
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5640631108243118932, guid: bbefeb5142414d144b98d620680d1f5e,
         type: 3}
@@ -4091,12 +4240,6 @@ PrefabInstance:
       objectReference: {fileID: 1493852774}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbefeb5142414d144b98d620680d1f5e, type: 3}
---- !u!4 &1421366817998444903 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1421366817998444903, guid: 37dac6524fe1911418c369c2641725ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 650097286473261484}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1645003084222464330 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1645003084222464330, guid: d77b124f6bbfe8843aa32eba7f15a463,
@@ -4339,7 +4482,7 @@ PrefabInstance:
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4971982048744600357, guid: 881914c12431b7146aa5b6e7e7f5e67b,
         type: 3}
@@ -4418,7 +4561,7 @@ PrefabInstance:
     - target: {fileID: 1774984380147544130, guid: a61c720f6776a3d419883bae91cfb180,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1774984380147544130, guid: a61c720f6776a3d419883bae91cfb180,
         type: 3}
@@ -4479,7 +4622,7 @@ PrefabInstance:
     - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 11.5
       objectReference: {fileID: 0}
     - target: {fileID: 1105470420161240444, guid: 047c0b8cd2b78af489e6bd606db14d9b,
         type: 3}
@@ -4648,7 +4791,7 @@ PrefabInstance:
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
@@ -4733,7 +4876,7 @@ PrefabInstance:
     - target: {fileID: 1645003084222464330, guid: d77b124f6bbfe8843aa32eba7f15a463,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1645003084222464330, guid: d77b124f6bbfe8843aa32eba7f15a463,
         type: 3}

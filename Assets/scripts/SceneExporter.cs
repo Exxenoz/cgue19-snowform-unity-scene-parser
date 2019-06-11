@@ -287,12 +287,6 @@ public class SceneExporter : MonoBehaviour
                 {
                     e.Add(new XAttribute("shadowMapHeight", c.ShadowMapHeight));
                 }
-                e.Add(new XAttribute("shadowMapOrthoLeft", c.ShadowMapOrthoLeft));
-                e.Add(new XAttribute("shadowMapOrthoRight", c.ShadowMapOrthoRight));
-                e.Add(new XAttribute("shadowMapOrthoBottom", c.ShadowMapOrthoBottom));
-                e.Add(new XAttribute("shadowMapOrthoTop", c.ShadowMapOrthoTop));
-                e.Add(new XAttribute("shadowMapOrthoNear", c.ShadowMapOrthoNear));
-                e.Add(new XAttribute("shadowMapOrthoFar", c.ShadowMapOrthoFar));
                 componentsElement.Add(e);
             }
         }
