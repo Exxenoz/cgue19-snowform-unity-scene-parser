@@ -64,8 +64,8 @@ MonoBehaviour:
   CCD: 1
   Kinematic: 0
   Mass: 1
-  MaxLinearVelocity: 80
-  MaxAngularVelocity: 100
+  MaxLinearVelocity: 10
+  MaxAngularVelocity: 20
   RaycastLayerMask: 2
 --- !u!1 &851766966263627619
 GameObject:
@@ -159,3 +159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Material: Snowball
   Mesh: Snowball
+  directionalLights: []
+  pointLights: []
+  spotLights: []

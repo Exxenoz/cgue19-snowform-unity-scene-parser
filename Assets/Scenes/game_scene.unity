@@ -661,6 +661,7 @@ Transform:
   - {fileID: 685993357}
   - {fileID: 2033572493}
   - {fileID: 818552348}
+  - {fileID: 1922031717}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -944,6 +945,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: NextLevelScene
   Value: assets/scenes/game_scene2.xml
+--- !u!1 &595400854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595400855}
+  - component: {fileID: 595400859}
+  - component: {fileID: 595400858}
+  - component: {fileID: 595400857}
+  - component: {fileID: 595400856}
+  m_Layer: 0
+  m_Name: Collider Fix 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595400855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595400854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 5.03, z: 75}
+  m_LocalScale: {x: 20, y: 10, z: 20}
+  m_Children: []
+  m_Father: {fileID: 1922031717}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &595400856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595400854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f717c5678da7df44b79dcad58245304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RaycastLayerMask: 1
+--- !u!114 &595400857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595400854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d687b818d4c0cf47b2388305f1ac7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhysicsMaterial: Default
+  Offset: {x: 0, y: 0, z: 0}
+  HalfExtent: {x: 10, y: 5, z: 10}
+  Trigger: 0
+--- !u!23 &595400858
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595400854}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &595400859
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595400854}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &631588225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1873,8 +1982,11 @@ MonoBehaviour:
     18 95\" localRotation=\"-200 180 180\" localScale=\"1 1 1\" />\r\n      <CameraComponent
     />\r\n      <ThirdPersonControllerComponent targetId=\"Snowball\" distance=\"20\"
     />\r\n    </Components>\r\n    <Children />\r\n  </GameObject>\r\n  <GameObject
-    name=\"Lights\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
-    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    name=\"Skybox\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"20 20 20\" />\r\n      <MeshRendererComponent
+    material=\"Skybox\" mesh=\"Skybox\" />\r\n    </Components>\r\n    <Children />\r\n
+    \ </GameObject>\r\n  <GameObject name=\"Lights\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
     \   <Children>\r\n      <GameObject id=\"DirectionalLight1\" name=\"Directional
     Light 1\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-29.1
     21 25\" localRotation=\"50 -270 0\" localScale=\"30 1 40\" />\r\n          <DirectionalLightComponent
@@ -1978,7 +2090,7 @@ MonoBehaviour:
     15 75\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n      <SphereColliderComponent
     physicsMaterial=\"Snowball\" offset=\"0 0 0\" radius=\"0.5\" trigger=\"false\"
     />\r\n      <RigidDynamicComponent CCD=\"true\" kinematic=\"false\" mass=\"1\"
-    maxLinearVelocity=\"80\" maxAngularVelocity=\"100\" raycastLayerMask=\"2\" />\r\n
+    maxLinearVelocity=\"10\" maxAngularVelocity=\"20\" raycastLayerMask=\"2\" />\r\n
     \     <PlayerComponent />\r\n    </Components>\r\n    <Children>\r\n      <GameObject
     name=\"SnowballMesh\">\r\n        <Components>\r\n          <TransformComponent
     localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"0.003305583 0.003305583
@@ -2005,7 +2117,7 @@ MonoBehaviour:
     \             <MeshRendererComponent material=\"StandardDefault\" mesh=\"Coin\">\r\n
     \               <Light gameObjectId=\"DirectionalLight1\" />\r\n              </MeshRendererComponent>\r\n
     \             <BoxColliderComponent physicsMaterial=\"Default\" offset=\"0 0 0\"
-    halfExtent=\"2.5 2.5 2.5\" trigger=\"false\" />\r\n              <RigidStaticComponent
+    halfExtent=\"2.5 2.5 2.5\" trigger=\"true\" />\r\n              <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n              <RotateComponent rotationDirection=\"0
     1 0\" speed=\"5\" />\r\n              <CoinComponent />\r\n            </Components>\r\n
     \           <Children />\r\n          </GameObject>\r\n        </Children>\r\n
@@ -2041,21 +2153,21 @@ MonoBehaviour:
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (1)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 20\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 18\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (2)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 30\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 27\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (3)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 40\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 36\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
@@ -2126,14 +2238,14 @@ MonoBehaviour:
     collisionMesh=\"BlockSnowCornerLarge\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (9)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 50\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 45\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (10)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 10\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 9\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
@@ -2188,7 +2300,20 @@ MonoBehaviour:
     minRelativeEmitPosition=\"-15 0 -50\" maxRelativeEmitPosition=\"15 0 50\" minParticleVelocity=\"0
     -1 0\" maxParticleVelocity=\"0 -3 0\" minParticleSize=\"0.01\" maxParticleSize=\"0.2\"
     minParticleLifetime=\"5\" maxParticleLifetime=\"15\" />\r\n        </Components>\r\n
-    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
+    \       <Children />\r\n      </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n
+    \ <GameObject name=\"Ground Collider Fixes\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    \   <Children>\r\n      <GameObject name=\"Collider Fix 1\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-5 5.03 40\" localRotation=\"0 0
+    0\" localScale=\"10 10 80\" />\r\n          <BoxColliderComponent physicsMaterial=\"Default\"
+    offset=\"0 0 0\" halfExtent=\"5 5 40\" trigger=\"false\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"Collider Fix 2\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-5 5.03 75\" localRotation=\"0 0
+    0\" localScale=\"20 10 20\" />\r\n          <BoxColliderComponent physicsMaterial=\"Default\"
+    offset=\"0 0 0\" halfExtent=\"10 5 10\" trigger=\"false\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n    </Children>\r\n  </GameObject>\r\n</Scene>"
 --- !u!4 &913051497
 Transform:
   m_ObjectHideFlags: 0
@@ -3741,6 +3866,38 @@ Transform:
   m_Father: {fileID: 421548682}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1922031716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1922031717}
+  m_Layer: 0
+  m_Name: Ground Collider Fixes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1922031717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922031716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1969225806}
+  - {fileID: 595400855}
+  m_Father: {fileID: 421548682}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1941388666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3826,6 +3983,114 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1941388666}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1969225805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969225806}
+  - component: {fileID: 1969225810}
+  - component: {fileID: 1969225809}
+  - component: {fileID: 1969225807}
+  - component: {fileID: 1969225808}
+  m_Layer: 0
+  m_Name: Collider Fix 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1969225806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969225805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 5.03, z: 40}
+  m_LocalScale: {x: 10, y: 10, z: 80}
+  m_Children: []
+  m_Father: {fileID: 1922031717}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1969225807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969225805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d687b818d4c0cf47b2388305f1ac7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PhysicsMaterial: Default
+  Offset: {x: 0, y: 0, z: 0}
+  HalfExtent: {x: 5, y: 5, z: 40}
+  Trigger: 0
+--- !u!114 &1969225808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969225805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f717c5678da7df44b79dcad58245304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RaycastLayerMask: 1
+--- !u!23 &1969225809
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969225805}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1969225810
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969225805}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1977632795
 PrefabInstance:
   m_ObjectHideFlags: 0
