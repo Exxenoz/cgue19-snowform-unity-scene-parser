@@ -2153,21 +2153,21 @@ MonoBehaviour:
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (1)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 18\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 20\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (2)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 27\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 30\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (3)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 36\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 40\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
@@ -2238,14 +2238,14 @@ MonoBehaviour:
     collisionMesh=\"BlockSnowCornerLarge\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (9)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 45\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 50\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"BlockSnow\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
     raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
     \     </GameObject>\r\n      <GameObject name=\"BlockSnow (10)\">\r\n        <Components>\r\n
-    \         <TransformComponent localPosition=\"0 0 9\" localRotation=\"0 0 0\"
+    \         <TransformComponent localPosition=\"0 0 10\" localRotation=\"0 0 0\"
     localScale=\"1 1 1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"BlockSnow\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
@@ -2269,23 +2269,30 @@ MonoBehaviour:
     \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Snowman\"
     offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
     />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \     <GameObject name=\"Rocks\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"-12.88 10 87.92\" localRotation=\"0 -180 0\" localScale=\"1 1
-    1\" />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"Rocks\">\r\n
-    \           <Light gameObjectId=\"DirectionalLight1\" />\r\n          </MeshRendererComponent>\r\n
-    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Rocks\"
-    offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
-    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \     <GameObject name=\"Mushrooms\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"-2.7 10 83.84\" localRotation=\"0 0 0\" localScale=\"0.2 0.2 0.2\"
-    />\r\n          <MeshRendererComponent material=\"StandardDefault\" mesh=\"Mushrooms\">\r\n
-    \           <Light gameObjectId=\"DirectionalLight1\" />\r\n          </MeshRendererComponent>\r\n
-    \         <MeshColliderComponent physicsMaterial=\"Default\" collisionMesh=\"Mushrooms\"
-    offset=\"0 0 0\" />\r\n          <RigidStaticComponent raycastLayerMask=\"1\"
-    />\r\n        </Components>\r\n        <Children />\r\n      </GameObject>\r\n
-    \     <GameObject name=\"Mushrooms (1)\">\r\n        <Components>\r\n          <TransformComponent
-    localPosition=\"7.64 10 74.91\" localRotation=\"0 -63.61 0\" localScale=\"0.2
-    0.2 0.2\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    \     <GameObject name=\"Snowman Text\">\r\n        <Components>\r\n          <TransformComponent
+    localPosition=\"-11.96 15 68.04\" localRotation=\"0 -315 0\" localScale=\"1 1
+    1\" />\r\n          <TextComponent enabled=\"true\" material=\"SnowmanText\" font=\"Arial\"
+    fontSize=\"1\" text=\"Collect all coins and reach the flag&#xA;-----------------------------------&gt;\"
+    textAlignment=\"CenterCenter\" textOverflowMode=\"Overflow\" wordWrapping=\"false\"
+    maxWidth=\"0\" maxHeight=\"0\" outline=\"true\" outlineMaterial=\"OutlineDarkRed3D\"
+    outlineThickness=\"0.1\" outlineOffset=\"-0.05 0 0\" />\r\n        </Components>\r\n
+    \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"Rocks\">\r\n
+    \       <Components>\r\n          <TransformComponent localPosition=\"-12.88 10
+    87.92\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    material=\"StandardDefault\" mesh=\"Rocks\">\r\n            <Light gameObjectId=\"DirectionalLight1\"
+    />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"Rocks\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"Mushrooms\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"-2.7 10 83.84\" localRotation=\"0
+    0 0\" localScale=\"0.2 0.2 0.2\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
+    mesh=\"Mushrooms\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
+    \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
+    collisionMesh=\"Mushrooms\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
+    raycastLayerMask=\"1\" />\r\n        </Components>\r\n        <Children />\r\n
+    \     </GameObject>\r\n      <GameObject name=\"Mushrooms (1)\">\r\n        <Components>\r\n
+    \         <TransformComponent localPosition=\"7.64 10 74.91\" localRotation=\"0
+    -63.61 0\" localScale=\"0.2 0.2 0.2\" />\r\n          <MeshRendererComponent material=\"StandardDefault\"
     mesh=\"Mushrooms\">\r\n            <Light gameObjectId=\"DirectionalLight1\" />\r\n
     \         </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"Mushrooms\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
@@ -3089,6 +3096,65 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1281774475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1293599106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1293599107}
+  - component: {fileID: 1293599108}
+  m_Layer: 0
+  m_Name: Snowman Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1293599107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293599106}
+  m_LocalRotation: {x: 0, y: 0.3826836, z: -0, w: -0.92387944}
+  m_LocalPosition: {x: 11.96, y: 15, z: 68.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2033572493}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 315, z: 0}
+--- !u!114 &1293599108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293599106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423ababb0dc8f1e48ade509d527bbe64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enabled: 1
+  Material: SnowmanText
+  Font: Arial
+  FontSize: 1
+  Text: 'Collect all coins and reach the flag
+
+    ----------------------------------->'
+  TextAlignment: CenterCenter
+  TextOverflowMode: Overflow
+  WordWrapping: 0
+  MaxWidth: 0
+  MaxHeight: 0
+  Outline: 1
+  OutlineMaterial: OutlineBlack3D
+  OutlineThickness: 0.1
+  OutlineOffset: {x: -0.05, y: 0, z: 0}
 --- !u!1001 &1409058621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4220,6 +4286,7 @@ Transform:
   m_Children:
   - {fileID: 3983172138782214115}
   - {fileID: 1645003084222464330}
+  - {fileID: 1293599107}
   - {fileID: 5532417311761364422}
   - {fileID: 1774984380147544130}
   - {fileID: 166283196}
@@ -5141,7 +5208,7 @@ PrefabInstance:
     - target: {fileID: 1645003084222464330, guid: d77b124f6bbfe8843aa32eba7f15a463,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1645003084222464330, guid: d77b124f6bbfe8843aa32eba7f15a463,
         type: 3}

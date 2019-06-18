@@ -368,6 +368,29 @@ public class SceneExporter : MonoBehaviour
             }
         }
 
+        {
+            SFTextComponent c = transform.GetComponent<SFTextComponent>();
+            if (c != null)
+            {
+                XElement e = new XElement("TextComponent");
+                e.Add(new XAttribute("enabled", ToString(c.Enabled)));
+                e.Add(new XAttribute("material", c.Material));
+                e.Add(new XAttribute("font", c.Font));
+                e.Add(new XAttribute("fontSize", ToString(c.FontSize)));
+                e.Add(new XAttribute("text", c.Text));
+                e.Add(new XAttribute("textAlignment", c.TextAlignment));
+                e.Add(new XAttribute("textOverflowMode", c.TextOverflowMode));
+                e.Add(new XAttribute("wordWrapping", ToString(c.WordWrapping)));
+                e.Add(new XAttribute("maxWidth", ToString(c.MaxWidth)));
+                e.Add(new XAttribute("maxHeight", ToString(c.MaxHeight)));
+                e.Add(new XAttribute("outline", ToString(c.Outline)));
+                e.Add(new XAttribute("outlineMaterial", c.OutlineMaterial));
+                e.Add(new XAttribute("outlineThickness", ToString(c.OutlineThickness)));
+                e.Add(new XAttribute("outlineOffset", ToString(c.OutlineOffset)));
+                componentsElement.Add(e);
+            }
+        }
+
         gameObjectElement.Add(componentsElement);
 
         XElement childrenElement = new XElement("Children");
