@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enabled: 1
-  PrewarmTime: 5
+  PrewarmTime: 10
   ParticleCount: 5000
   ParticleMaterial: SnowParticle
   ParticleMesh: SnowParticle
