@@ -856,6 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f712d6234240b94580843110037f50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ViewFrustumCulling: 1
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,13 +1981,14 @@ MonoBehaviour:
     \   <Children />\r\n  </GameObject>\r\n  <GameObject id=\"MainCamera\" name=\"Main
     Camera\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"-5
     18 95\" localRotation=\"-200 180 180\" localScale=\"1 1 1\" />\r\n      <CameraComponent
-    />\r\n      <ThirdPersonControllerComponent targetId=\"Snowball\" distance=\"20\"
+    viewFrustumCulling=\"true\" />\r\n      <ThirdPersonControllerComponent targetId=\"Snowball\"
+    distance=\"20\" />\r\n    </Components>\r\n    <Children />\r\n  </GameObject>\r\n
+    \ <GameObject name=\"Skybox\">\r\n    <Components>\r\n      <TransformComponent
+    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"20 20 20\" />\r\n
+    \     <MeshRendererComponent material=\"Skybox\" mesh=\"Skybox\" dontCull=\"true\"
     />\r\n    </Components>\r\n    <Children />\r\n  </GameObject>\r\n  <GameObject
-    name=\"Skybox\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
-    0 0\" localRotation=\"0 0 0\" localScale=\"20 20 20\" />\r\n      <MeshRendererComponent
-    material=\"Skybox\" mesh=\"Skybox\" />\r\n    </Components>\r\n    <Children />\r\n
-    \ </GameObject>\r\n  <GameObject name=\"Lights\">\r\n    <Components>\r\n      <TransformComponent
-    localPosition=\"0 0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
+    name=\"Lights\">\r\n    <Components>\r\n      <TransformComponent localPosition=\"0
+    0 0\" localRotation=\"0 0 0\" localScale=\"1 1 1\" />\r\n    </Components>\r\n
     \   <Children>\r\n      <GameObject id=\"DirectionalLight1\" name=\"Directional
     Light 1\">\r\n        <Components>\r\n          <TransformComponent localPosition=\"-29.1
     21 25\" localRotation=\"50 -270 0\" localScale=\"30 1 40\" />\r\n          <DirectionalLightComponent
@@ -2274,11 +2276,11 @@ MonoBehaviour:
     1\" />\r\n          <TextComponent enabled=\"true\" material=\"SnowmanText\" font=\"Arial\"
     fontSize=\"1\" text=\"Collect all coins and reach the flag&#xA;-----------------------------------&gt;\"
     textAlignment=\"CenterCenter\" textOverflowMode=\"Overflow\" wordWrapping=\"false\"
-    maxWidth=\"0\" maxHeight=\"0\" outline=\"true\" outlineMaterial=\"OutlineDarkRed3D\"
+    maxWidth=\"0\" maxHeight=\"0\" outline=\"true\" outlineMaterial=\"OutlineBlack3D\"
     outlineThickness=\"0.1\" outlineOffset=\"-0.05 0 0\" />\r\n        </Components>\r\n
     \       <Children />\r\n      </GameObject>\r\n      <GameObject name=\"Rocks\">\r\n
-    \       <Components>\r\n          <TransformComponent localPosition=\"-12.88 10
-    87.92\" localRotation=\"0 -180 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
+    \       <Components>\r\n          <TransformComponent localPosition=\"-9.79 10
+    89.78\" localRotation=\"0 -147.2366 0\" localScale=\"1 1 1\" />\r\n          <MeshRendererComponent
     material=\"StandardDefault\" mesh=\"Rocks\">\r\n            <Light gameObjectId=\"DirectionalLight1\"
     />\r\n          </MeshRendererComponent>\r\n          <MeshColliderComponent physicsMaterial=\"Default\"
     collisionMesh=\"Rocks\" offset=\"0 0 0\" />\r\n          <RigidStaticComponent
@@ -3897,6 +3899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Material: Skybox
   Mesh: Skybox
+  DontCull: 1
   directionalLights: []
   pointLights: []
   spotLights: []
@@ -5088,7 +5091,7 @@ PrefabInstance:
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.88
+      value: 9.79
       objectReference: {fileID: 0}
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
@@ -5098,7 +5101,7 @@ PrefabInstance:
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 87.92
+      value: 89.78
       objectReference: {fileID: 0}
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
@@ -5108,7 +5111,7 @@ PrefabInstance:
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.95940423
       objectReference: {fileID: 0}
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
@@ -5118,7 +5121,7 @@ PrefabInstance:
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.28203478
       objectReference: {fileID: 0}
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
@@ -5133,7 +5136,7 @@ PrefabInstance:
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 147.237
       objectReference: {fileID: 0}
     - target: {fileID: 5532417311761364422, guid: 84e3d87c9ab8670428d77c7bcff63073,
         type: 3}

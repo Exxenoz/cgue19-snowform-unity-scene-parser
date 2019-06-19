@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class SFCameraComponent : MonoBehaviour
 {
+    public bool ViewFrustumCulling = false;
 }

@@ -74,6 +74,10 @@ public class SceneExporter : MonoBehaviour
                 XElement e = new XElement("MeshRendererComponent");
                 e.Add(new XAttribute("material", c.Material));
                 e.Add(new XAttribute("mesh", c.Mesh));
+                if (c.DontCull)
+                {
+                    e.Add(new XAttribute("dontCull", ToString(true)));
+                }
                 foreach (SFDirectionalLightComponent l in c.directionalLights)
                 {
                     if (!string.IsNullOrEmpty(l.gameObject.tag) && l.gameObject.tag != "Untagged")
@@ -194,6 +198,7 @@ public class SceneExporter : MonoBehaviour
             if (c != null)
             {
                 XElement e = new XElement("CameraComponent");
+                e.Add(new XAttribute("viewFrustumCulling", ToString(c.ViewFrustumCulling)));
                 componentsElement.Add(e);
             }
         }
