@@ -1143,6 +1143,7 @@ GameObject:
   - component: {fileID: 588970569}
   - component: {fileID: 588970567}
   - component: {fileID: 588970568}
+  - component: {fileID: 588970570}
   m_Layer: 0
   m_Name: Scene Options
   m_TagString: Untagged
@@ -1206,6 +1207,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: NextLevelScene
   Value: 
+--- !u!114 &588970570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588970565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6b5a6041c93bf429c07cedbd5332f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: LevelText
+  Value: Level 2
 --- !u!1001 &631588225
 PrefabInstance:
   m_ObjectHideFlags: 0
