@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Xml.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -432,5 +433,9 @@ public class SceneExporter : MonoBehaviour
         }
 
         Output = sceneElement.ToString();
+
+        StreamWriter writer = new StreamWriter("./export.xml", false);
+        writer.WriteLine(Output);
+        writer.Close();
     }
 }
