@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: NextLevelScene
-  Value: 
+  Value: assets/scenes/game_scene3.xml
 --- !u!114 &588970570
 MonoBehaviour:
   m_ObjectHideFlags: 0
